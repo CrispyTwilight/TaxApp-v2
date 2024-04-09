@@ -1,3 +1,5 @@
+using Microsoft.Data.SqlClient;
+
 namespace TaxApp_v2
 {
     internal static class Program
@@ -8,10 +10,17 @@ namespace TaxApp_v2
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            // Create an instance of the DatabaseManager class and create the tables.
+            DatabaseManager dbManager = new DatabaseManager();
+            dbManager.CreateTables();
+
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+
+
         }
     }
 }
