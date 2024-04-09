@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Windows.Forms;
 
-namespace TaxApp_v2.TaxForms
+namespace TaxApp_v2.Admin_User_Controls
 {
     public partial class DashboardControl : UserControl
     {
@@ -19,13 +19,13 @@ namespace TaxApp_v2.TaxForms
         // On load, grab the username from the database and display it in the label
         private void DashboardControl_Load(object sender, EventArgs e)
         {
-            Dictionary<string, object> parameters = new Dictionary<string, object>
+           /* Dictionary<string, object> parameters = new Dictionary<string, object>
                 {
                     { "@userId", Utils.currentUserId }
                 };
 
             // Execute the query and read the result
-            DataTable result = DatabaseHelper.ExecuteSelectQuery("SELECT username FROM users WHERE user_id = @userId", parameters);
+            //DataTable result = DatabaseHelper.ExecuteSelectQuery("SELECT username FROM users WHERE user_id = @userId", parameters);
 
             // Check if result is not null and read the result
             if (result.Rows.Count > 0)
@@ -37,7 +37,7 @@ namespace TaxApp_v2.TaxForms
             {
                 // If no rows are found, display a generic welcome message
                 UsernameLabel.Text = "Welcome!";
-            }
+            }*/
 
             // Load in the user's tax forms
             LoadTaxUserControls();

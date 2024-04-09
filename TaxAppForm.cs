@@ -32,14 +32,14 @@ namespace TaxApp_v2
                 this.Controls.Remove(currentControl);
 
             // Show the RegistrationControl
-            currentControl = new RegistrationControl();
+            currentControl = new Admin_User_Controls.RegistrationControl();
             this.Controls.Add(currentControl);
 
             // Center the UserControl within the Form
             Utils.CenterControl(currentControl);
 
             // Set the focus to the UsernameTextBox
-            ((RegistrationControl)currentControl).FocusUsername();
+            ((Admin_User_Controls.RegistrationControl)currentControl).FocusUsername();
         }
 
         public void SwitchToLogin()
@@ -49,14 +49,14 @@ namespace TaxApp_v2
                 this.Controls.Remove(currentControl);
 
             // Show the LoginControl
-            currentControl = new LoginControl();
+            currentControl = new Admin_User_Controls.LoginControl();
             this.Controls.Add(currentControl);
 
             // Center the UserControl within the Form
             Utils.CenterControl(currentControl);
 
             // Set the focus to the UsernameTextBox
-            ((LoginControl)currentControl).FocusUsername();
+            ((Admin_User_Controls.LoginControl)currentControl).FocusUsername();
         }
 
         public void SwitchToDashboard()
@@ -66,7 +66,7 @@ namespace TaxApp_v2
                 this.Controls.Remove(currentControl);
 
             // Show the DashboardControl
-            currentControl = new DashboardControl();
+            currentControl = new Admin_User_Controls.DashboardControl();
             this.Controls.Add(currentControl);
         }
 

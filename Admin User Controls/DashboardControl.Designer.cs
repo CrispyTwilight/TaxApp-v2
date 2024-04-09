@@ -1,4 +1,7 @@
-﻿namespace TaxApp_v2.TaxForms
+﻿using Tax_Application.Forms;
+using TaxApp_v2.TaxForms;
+
+namespace TaxApp_v2.Admin_User_Controls
 {
     partial class DashboardControl
     {
@@ -62,18 +65,17 @@
             this.HelpButton = new System.Windows.Forms.Button();
             this.SidebarPanel = new System.Windows.Forms.Panel();
             this.AdminPanel = new System.Windows.Forms.Panel();
-            this.clientsControl1 = new Tax_Application.Forms.ClientsControl();
+            this.clientsControl1 = new TaxApp_v2.Admin_User_Controls.ClientsControl();
             this.ScheduleDTabPage = new System.Windows.Forms.TabPage();
-            this.scheduleD1 = new Tax_Application.Forms.ScheduleD();
+            this.scheduleD1 = new ScheduleD();
             this.Form1098_ETabPage = new System.Windows.Forms.TabPage();
-            this.form1098_E1 = new Tax_Application.Forms.Form1098_E();
+            this.form1098_E1 = new Form1098_E();
             this.ScheduleK_1TabPage = new System.Windows.Forms.TabPage();
-            this.scheduleK_11 = new Tax_Application.Forms.ScheduleK_1();
+            this.scheduleK_11 = new ScheduleK_1();
             this.Form1040TabPage = new System.Windows.Forms.TabPage();
-            this.form10401 = new Tax_Application.Forms.Form1040();
+            this.form10401 = new Form1040();
             this.FormW2TabPage = new System.Windows.Forms.TabPage();
             this.TaxFormsTabControl = new System.Windows.Forms.TabControl();
-            this.w2UserControl1 = new Tax_Application.Forms.W2UserControl();
             this.MenuStrip.SuspendLayout();
             this.UserPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UserPictureBox)).BeginInit();

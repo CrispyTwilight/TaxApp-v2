@@ -21,7 +21,7 @@ namespace TaxApp_v2.Admin_User_Controls
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(UsernameTextBox.Text) || string.IsNullOrEmpty(PasswordTextBox.Text) || string.IsNullOrEmpty(ReEnterPasswordTextBox.Text))
+            /*if (string.IsNullOrEmpty(UsernameTextBox.Text) || string.IsNullOrEmpty(PasswordTextBox.Text) || string.IsNullOrEmpty(ReEnterPasswordTextBox.Text))
             {
                 Utils.ShowErrorMessage("Username or Password field is empty.", "Registration Failed");
                 Utils.ClearAndFocus(UsernameTextBox, PasswordTextBox, ReEnterPasswordTextBox);
@@ -55,7 +55,7 @@ namespace TaxApp_v2.Admin_User_Controls
             DatabaseHelper.ExecuteNonSelectQuery("INSERT INTO users (username, password_hash, role) VALUES (@username, @password, @role)", insertParameters);
 
             MessageBox.Show("Registration Successful.", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            SwitchToLogin();
+            SwitchToLogin();*/
         }
 
         private void BackToLoginButton_Click(object sender, EventArgs e)

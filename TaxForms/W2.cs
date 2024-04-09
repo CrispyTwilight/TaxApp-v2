@@ -83,7 +83,7 @@ namespace TaxApp_v2.TaxForms
                 { "@w2_id", 1 } // Replace with an actual ID which will be passed from the DashboardControl
             };
 
-            //DataTable dt = DatabaseHelper.ExecuteSelectQuery("SELECT * FROM w2 WHERE w2_id = @w2_id", parameters);
+            /*DataTable dt = DatabaseHelper.ExecuteSelectQuery("SELECT * FROM w2 WHERE w2_id = @w2_id", parameters);
             if (dt != null && dt.Rows.Count > 0)
             {
                 DataRow dr = dt.Rows[0];
@@ -103,7 +103,7 @@ namespace TaxApp_v2.TaxForms
             else
             {
                 Console.WriteLine("No rows returned from the database.");
-            }
+            }*/
         }
     }
 }
