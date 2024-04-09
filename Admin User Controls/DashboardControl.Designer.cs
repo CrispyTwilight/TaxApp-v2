@@ -31,536 +31,511 @@ namespace TaxApp_v2.Admin_User_Controls
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardControl));
-            this.MenuStrip = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.NewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.OpenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zoomOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fullscreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.userGuideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SearchToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.UserPanel = new System.Windows.Forms.Panel();
-            this.UsernameLabel = new System.Windows.Forms.Label();
-            this.UserPictureBox = new System.Windows.Forms.PictureBox();
-            this.ButtonPanel = new System.Windows.Forms.Panel();
-            this.UsersButton = new System.Windows.Forms.Button();
-            this.EmployeesButton = new System.Windows.Forms.Button();
-            this.InvoicesButton = new System.Windows.Forms.Button();
-            this.ClientsButton = new System.Windows.Forms.Button();
-            this.AppointmentsButton = new System.Windows.Forms.Button();
-            this.LogOutButton = new System.Windows.Forms.Button();
-            this.HelpButton = new System.Windows.Forms.Button();
-            this.SidebarPanel = new System.Windows.Forms.Panel();
-            this.AdminPanel = new System.Windows.Forms.Panel();
-            this.clientsControl1 = new TaxApp_v2.Admin_User_Controls.ClientsControl();
-            this.ScheduleDTabPage = new System.Windows.Forms.TabPage();
-            this.scheduleD1 = new ScheduleD();
-            this.Form1098_ETabPage = new System.Windows.Forms.TabPage();
-            this.form1098_E1 = new Form1098_E();
-            this.ScheduleK_1TabPage = new System.Windows.Forms.TabPage();
-            this.scheduleK_11 = new ScheduleK_1();
-            this.Form1040TabPage = new System.Windows.Forms.TabPage();
-            this.form10401 = new Form1040();
-            this.FormW2TabPage = new System.Windows.Forms.TabPage();
-            this.TaxFormsTabControl = new System.Windows.Forms.TabControl();
-            this.MenuStrip.SuspendLayout();
-            this.UserPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UserPictureBox)).BeginInit();
-            this.ButtonPanel.SuspendLayout();
-            this.SidebarPanel.SuspendLayout();
-            this.AdminPanel.SuspendLayout();
-            this.ScheduleDTabPage.SuspendLayout();
-            this.Form1098_ETabPage.SuspendLayout();
-            this.ScheduleK_1TabPage.SuspendLayout();
-            this.Form1040TabPage.SuspendLayout();
-            this.FormW2TabPage.SuspendLayout();
-            this.TaxFormsTabControl.SuspendLayout();
-            this.SuspendLayout();
+            MenuStrip = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            NewToolStripMenuItem = new ToolStripMenuItem();
+            OpenToolStripMenuItem = new ToolStripMenuItem();
+            SaveToolStripMenuItem = new ToolStripMenuItem();
+            ExitToolStripMenuItem = new ToolStripMenuItem();
+            EditToolStripMenuItem = new ToolStripMenuItem();
+            cutToolStripMenuItem = new ToolStripMenuItem();
+            copyToolStripMenuItem = new ToolStripMenuItem();
+            pasteToolStripMenuItem = new ToolStripMenuItem();
+            undoToolStripMenuItem = new ToolStripMenuItem();
+            redoToolStripMenuItem = new ToolStripMenuItem();
+            viewToolStripMenuItem = new ToolStripMenuItem();
+            zoomInToolStripMenuItem = new ToolStripMenuItem();
+            zoomOutToolStripMenuItem = new ToolStripMenuItem();
+            fullscreenToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            userGuideToolStripMenuItem = new ToolStripMenuItem();
+            aboutToolStripMenuItem = new ToolStripMenuItem();
+            SearchToolStripTextBox = new ToolStripTextBox();
+            UserPanel = new Panel();
+            UsernameLabel = new Label();
+            UserPictureBox = new PictureBox();
+            ButtonPanel = new Panel();
+            UsersButton = new Button();
+            EmployeesButton = new Button();
+            InvoicesButton = new Button();
+            ClientsButton = new Button();
+            AppointmentsButton = new Button();
+            LogOutButton = new Button();
+            HelpButton = new Button();
+            SidebarPanel = new Panel();
+            AdminPanel = new Panel();
+            ScheduleDTabPage = new TabPage();
+            scheduleD1 = new ScheduleD();
+            Form1098_ETabPage = new TabPage();
+            form1098_E1 = new Form1098_E();
+            ScheduleK_1TabPage = new TabPage();
+            scheduleK_11 = new ScheduleK_1();
+            FormW2TabPage = new TabPage();
+            TaxFormsTabControl = new TabControl();
+            w2UserControl1 = new W2UserControl();
+            Form1040TabPage = new TabPage();
+            MenuStrip.SuspendLayout();
+            UserPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)UserPictureBox).BeginInit();
+            ButtonPanel.SuspendLayout();
+            SidebarPanel.SuspendLayout();
+            ScheduleDTabPage.SuspendLayout();
+            Form1098_ETabPage.SuspendLayout();
+            ScheduleK_1TabPage.SuspendLayout();
+            FormW2TabPage.SuspendLayout();
+            TaxFormsTabControl.SuspendLayout();
+            SuspendLayout();
             // 
             // MenuStrip
             // 
-            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.EditToolStripMenuItem,
-            this.viewToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.SearchToolStripTextBox});
-            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.MenuStrip.Size = new System.Drawing.Size(1600, 25);
-            this.MenuStrip.TabIndex = 1;
-            this.MenuStrip.Text = "menuStrip1";
+            MenuStrip.ImageScalingSize = new Size(24, 24);
+            MenuStrip.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, EditToolStripMenuItem, viewToolStripMenuItem, helpToolStripMenuItem, SearchToolStripTextBox });
+            MenuStrip.Location = new Point(0, 0);
+            MenuStrip.Name = "MenuStrip";
+            MenuStrip.Padding = new Padding(7, 2, 0, 2);
+            MenuStrip.Size = new Size(2667, 35);
+            MenuStrip.TabIndex = 1;
+            MenuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.NewToolStripMenuItem,
-            this.OpenToolStripMenuItem,
-            this.SaveToolStripMenuItem,
-            this.ExitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 23);
-            this.fileToolStripMenuItem.Text = "File";
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { NewToolStripMenuItem, OpenToolStripMenuItem, SaveToolStripMenuItem, ExitToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(54, 31);
+            fileToolStripMenuItem.Text = "File";
             // 
             // NewToolStripMenuItem
             // 
-            this.NewToolStripMenuItem.Name = "NewToolStripMenuItem";
-            this.NewToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.NewToolStripMenuItem.Text = "New";
+            NewToolStripMenuItem.Name = "NewToolStripMenuItem";
+            NewToolStripMenuItem.Size = new Size(158, 34);
+            NewToolStripMenuItem.Text = "New";
             // 
             // OpenToolStripMenuItem
             // 
-            this.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem";
-            this.OpenToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.OpenToolStripMenuItem.Text = "Open";
+            OpenToolStripMenuItem.Name = "OpenToolStripMenuItem";
+            OpenToolStripMenuItem.Size = new Size(158, 34);
+            OpenToolStripMenuItem.Text = "Open";
             // 
             // SaveToolStripMenuItem
             // 
-            this.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem";
-            this.SaveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.SaveToolStripMenuItem.Text = "Save";
+            SaveToolStripMenuItem.Name = "SaveToolStripMenuItem";
+            SaveToolStripMenuItem.Size = new Size(158, 34);
+            SaveToolStripMenuItem.Text = "Save";
             // 
             // ExitToolStripMenuItem
             // 
-            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.ExitToolStripMenuItem.Text = "Exit";
+            ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            ExitToolStripMenuItem.Size = new Size(158, 34);
+            ExitToolStripMenuItem.Text = "Exit";
             // 
             // EditToolStripMenuItem
             // 
-            this.EditToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem});
-            this.EditToolStripMenuItem.Name = "EditToolStripMenuItem";
-            this.EditToolStripMenuItem.Size = new System.Drawing.Size(39, 23);
-            this.EditToolStripMenuItem.Text = "Edit";
+            EditToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { cutToolStripMenuItem, copyToolStripMenuItem, pasteToolStripMenuItem, undoToolStripMenuItem, redoToolStripMenuItem });
+            EditToolStripMenuItem.Name = "EditToolStripMenuItem";
+            EditToolStripMenuItem.Size = new Size(58, 31);
+            EditToolStripMenuItem.Text = "Edit";
             // 
             // cutToolStripMenuItem
             // 
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
+            cutToolStripMenuItem.Name = "cutToolStripMenuItem";
+            cutToolStripMenuItem.Size = new Size(158, 34);
+            cutToolStripMenuItem.Text = "Cut";
             // 
             // copyToolStripMenuItem
             // 
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
+            copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            copyToolStripMenuItem.Size = new Size(158, 34);
+            copyToolStripMenuItem.Text = "Copy";
             // 
             // pasteToolStripMenuItem
             // 
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
+            pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
+            pasteToolStripMenuItem.Size = new Size(158, 34);
+            pasteToolStripMenuItem.Text = "Paste";
             // 
             // undoToolStripMenuItem
             // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
+            undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            undoToolStripMenuItem.Size = new Size(158, 34);
+            undoToolStripMenuItem.Text = "Undo";
             // 
             // redoToolStripMenuItem
             // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
-            this.redoToolStripMenuItem.Text = "Redo";
+            redoToolStripMenuItem.Name = "redoToolStripMenuItem";
+            redoToolStripMenuItem.Size = new Size(158, 34);
+            redoToolStripMenuItem.Text = "Redo";
             // 
             // viewToolStripMenuItem
             // 
-            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.zoomInToolStripMenuItem,
-            this.zoomOutToolStripMenuItem,
-            this.fullscreenToolStripMenuItem});
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 23);
-            this.viewToolStripMenuItem.Text = "View";
+            viewToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { zoomInToolStripMenuItem, zoomOutToolStripMenuItem, fullscreenToolStripMenuItem });
+            viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            viewToolStripMenuItem.Size = new Size(65, 31);
+            viewToolStripMenuItem.Text = "View";
             // 
             // zoomInToolStripMenuItem
             // 
-            this.zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
-            this.zoomInToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.zoomInToolStripMenuItem.Text = "Zoom In";
+            zoomInToolStripMenuItem.Name = "zoomInToolStripMenuItem";
+            zoomInToolStripMenuItem.Size = new Size(197, 34);
+            zoomInToolStripMenuItem.Text = "Zoom In";
             // 
             // zoomOutToolStripMenuItem
             // 
-            this.zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
-            this.zoomOutToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.zoomOutToolStripMenuItem.Text = "Zoom Out";
+            zoomOutToolStripMenuItem.Name = "zoomOutToolStripMenuItem";
+            zoomOutToolStripMenuItem.Size = new Size(197, 34);
+            zoomOutToolStripMenuItem.Text = "Zoom Out";
             // 
             // fullscreenToolStripMenuItem
             // 
-            this.fullscreenToolStripMenuItem.Name = "fullscreenToolStripMenuItem";
-            this.fullscreenToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.fullscreenToolStripMenuItem.Text = "Fullscreen";
+            fullscreenToolStripMenuItem.Name = "fullscreenToolStripMenuItem";
+            fullscreenToolStripMenuItem.Size = new Size(197, 34);
+            fullscreenToolStripMenuItem.Text = "Fullscreen";
             // 
             // helpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.userGuideToolStripMenuItem,
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 23);
-            this.helpToolStripMenuItem.Text = "Help";
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { userGuideToolStripMenuItem, aboutToolStripMenuItem });
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(65, 31);
+            helpToolStripMenuItem.Text = "Help";
             // 
             // userGuideToolStripMenuItem
             // 
-            this.userGuideToolStripMenuItem.Name = "userGuideToolStripMenuItem";
-            this.userGuideToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.userGuideToolStripMenuItem.Text = "User Guide";
+            userGuideToolStripMenuItem.Name = "userGuideToolStripMenuItem";
+            userGuideToolStripMenuItem.Size = new Size(200, 34);
+            userGuideToolStripMenuItem.Text = "User Guide";
             // 
             // aboutToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            aboutToolStripMenuItem.Size = new Size(200, 34);
+            aboutToolStripMenuItem.Text = "About";
             // 
             // SearchToolStripTextBox
             // 
-            this.SearchToolStripTextBox.Name = "SearchToolStripTextBox";
-            this.SearchToolStripTextBox.Size = new System.Drawing.Size(135, 23);
-            this.SearchToolStripTextBox.Text = "Search";
+            SearchToolStripTextBox.Name = "SearchToolStripTextBox";
+            SearchToolStripTextBox.Size = new Size(222, 31);
+            SearchToolStripTextBox.Text = "Search";
             // 
             // UserPanel
             // 
-            this.UserPanel.Controls.Add(this.UsernameLabel);
-            this.UserPanel.Controls.Add(this.UserPictureBox);
-            this.UserPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UserPanel.Location = new System.Drawing.Point(0, 0);
-            this.UserPanel.Name = "UserPanel";
-            this.UserPanel.Size = new System.Drawing.Size(200, 160);
-            this.UserPanel.TabIndex = 0;
+            UserPanel.Controls.Add(UsernameLabel);
+            UserPanel.Controls.Add(UserPictureBox);
+            UserPanel.Dock = DockStyle.Top;
+            UserPanel.Location = new Point(0, 0);
+            UserPanel.Margin = new Padding(5, 6, 5, 6);
+            UserPanel.Name = "UserPanel";
+            UserPanel.Size = new Size(333, 308);
+            UserPanel.TabIndex = 0;
             // 
             // UsernameLabel
             // 
-            this.UsernameLabel.AutoSize = true;
-            this.UsernameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.UsernameLabel.Location = new System.Drawing.Point(0, 116);
-            this.UsernameLabel.MaximumSize = new System.Drawing.Size(200, 21);
-            this.UsernameLabel.MinimumSize = new System.Drawing.Size(200, 21);
-            this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(200, 21);
-            this.UsernameLabel.TabIndex = 0;
-            this.UsernameLabel.Text = "Username";
-            this.UsernameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            UsernameLabel.AutoSize = true;
+            UsernameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            UsernameLabel.ForeColor = Color.WhiteSmoke;
+            UsernameLabel.Location = new Point(0, 223);
+            UsernameLabel.Margin = new Padding(5, 0, 5, 0);
+            UsernameLabel.MaximumSize = new Size(333, 40);
+            UsernameLabel.MinimumSize = new Size(333, 40);
+            UsernameLabel.Name = "UsernameLabel";
+            UsernameLabel.Size = new Size(333, 40);
+            UsernameLabel.TabIndex = 0;
+            UsernameLabel.Text = "Username";
+            UsernameLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // UserPictureBox
             // 
-            this.UserPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("UserPictureBox.Image")));
-            this.UserPictureBox.Location = new System.Drawing.Point(0, 48);
-            this.UserPictureBox.Name = "UserPictureBox";
-            this.UserPictureBox.Size = new System.Drawing.Size(200, 65);
-            this.UserPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.UserPictureBox.TabIndex = 29;
-            this.UserPictureBox.TabStop = false;
+            UserPictureBox.Location = new Point(0, 92);
+            UserPictureBox.Margin = new Padding(5, 6, 5, 6);
+            UserPictureBox.Name = "UserPictureBox";
+            UserPictureBox.Size = new Size(333, 125);
+            UserPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            UserPictureBox.TabIndex = 29;
+            UserPictureBox.TabStop = false;
             // 
             // ButtonPanel
             // 
-            this.ButtonPanel.Controls.Add(this.UsersButton);
-            this.ButtonPanel.Controls.Add(this.EmployeesButton);
-            this.ButtonPanel.Controls.Add(this.InvoicesButton);
-            this.ButtonPanel.Controls.Add(this.ClientsButton);
-            this.ButtonPanel.Controls.Add(this.AppointmentsButton);
-            this.ButtonPanel.Controls.Add(this.LogOutButton);
-            this.ButtonPanel.Controls.Add(this.HelpButton);
-            this.ButtonPanel.Location = new System.Drawing.Point(0, 160);
-            this.ButtonPanel.Name = "ButtonPanel";
-            this.ButtonPanel.Size = new System.Drawing.Size(200, 715);
-            this.ButtonPanel.TabIndex = 30;
+            ButtonPanel.Controls.Add(UsersButton);
+            ButtonPanel.Controls.Add(EmployeesButton);
+            ButtonPanel.Controls.Add(InvoicesButton);
+            ButtonPanel.Controls.Add(ClientsButton);
+            ButtonPanel.Controls.Add(AppointmentsButton);
+            ButtonPanel.Controls.Add(LogOutButton);
+            ButtonPanel.Controls.Add(HelpButton);
+            ButtonPanel.Location = new Point(0, 308);
+            ButtonPanel.Margin = new Padding(5, 6, 5, 6);
+            ButtonPanel.Name = "ButtonPanel";
+            ButtonPanel.Size = new Size(333, 1375);
+            ButtonPanel.TabIndex = 30;
             // 
             // UsersButton
             // 
-            this.UsersButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UsersButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.UsersButton.FlatAppearance.BorderSize = 0;
-            this.UsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UsersButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.UsersButton.Location = new System.Drawing.Point(0, 168);
-            this.UsersButton.Name = "UsersButton";
-            this.UsersButton.Size = new System.Drawing.Size(200, 42);
-            this.UsersButton.TabIndex = 3;
-            this.UsersButton.Text = "&USERS";
-            this.UsersButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.UsersButton.UseVisualStyleBackColor = false;
+            UsersButton.Cursor = Cursors.Hand;
+            UsersButton.Dock = DockStyle.Top;
+            UsersButton.FlatAppearance.BorderSize = 0;
+            UsersButton.FlatStyle = FlatStyle.Flat;
+            UsersButton.ForeColor = Color.WhiteSmoke;
+            UsersButton.Location = new Point(0, 324);
+            UsersButton.Margin = new Padding(5, 6, 5, 6);
+            UsersButton.Name = "UsersButton";
+            UsersButton.Size = new Size(333, 81);
+            UsersButton.TabIndex = 3;
+            UsersButton.Text = "&USERS";
+            UsersButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+            UsersButton.UseVisualStyleBackColor = false;
             // 
             // EmployeesButton
             // 
-            this.EmployeesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.EmployeesButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.EmployeesButton.FlatAppearance.BorderSize = 0;
-            this.EmployeesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EmployeesButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.EmployeesButton.Location = new System.Drawing.Point(0, 126);
-            this.EmployeesButton.Name = "EmployeesButton";
-            this.EmployeesButton.Size = new System.Drawing.Size(200, 42);
-            this.EmployeesButton.TabIndex = 2;
-            this.EmployeesButton.Text = "&EMPLOYEES";
-            this.EmployeesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.EmployeesButton.UseVisualStyleBackColor = false;
+            EmployeesButton.Cursor = Cursors.Hand;
+            EmployeesButton.Dock = DockStyle.Top;
+            EmployeesButton.FlatAppearance.BorderSize = 0;
+            EmployeesButton.FlatStyle = FlatStyle.Flat;
+            EmployeesButton.ForeColor = Color.WhiteSmoke;
+            EmployeesButton.Location = new Point(0, 243);
+            EmployeesButton.Margin = new Padding(5, 6, 5, 6);
+            EmployeesButton.Name = "EmployeesButton";
+            EmployeesButton.Size = new Size(333, 81);
+            EmployeesButton.TabIndex = 2;
+            EmployeesButton.Text = "&EMPLOYEES";
+            EmployeesButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+            EmployeesButton.UseVisualStyleBackColor = false;
             // 
             // InvoicesButton
             // 
-            this.InvoicesButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.InvoicesButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.InvoicesButton.FlatAppearance.BorderSize = 0;
-            this.InvoicesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.InvoicesButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.InvoicesButton.Location = new System.Drawing.Point(0, 84);
-            this.InvoicesButton.Name = "InvoicesButton";
-            this.InvoicesButton.Size = new System.Drawing.Size(200, 42);
-            this.InvoicesButton.TabIndex = 4;
-            this.InvoicesButton.Text = "&INVOICES";
-            this.InvoicesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.InvoicesButton.UseVisualStyleBackColor = false;
+            InvoicesButton.Cursor = Cursors.Hand;
+            InvoicesButton.Dock = DockStyle.Top;
+            InvoicesButton.FlatAppearance.BorderSize = 0;
+            InvoicesButton.FlatStyle = FlatStyle.Flat;
+            InvoicesButton.ForeColor = Color.WhiteSmoke;
+            InvoicesButton.Location = new Point(0, 162);
+            InvoicesButton.Margin = new Padding(5, 6, 5, 6);
+            InvoicesButton.Name = "InvoicesButton";
+            InvoicesButton.Size = new Size(333, 81);
+            InvoicesButton.TabIndex = 4;
+            InvoicesButton.Text = "&INVOICES";
+            InvoicesButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+            InvoicesButton.UseVisualStyleBackColor = false;
             // 
             // ClientsButton
             // 
-            this.ClientsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClientsButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ClientsButton.FlatAppearance.BorderSize = 0;
-            this.ClientsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClientsButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientsButton.Location = new System.Drawing.Point(0, 42);
-            this.ClientsButton.Name = "ClientsButton";
-            this.ClientsButton.Size = new System.Drawing.Size(200, 42);
-            this.ClientsButton.TabIndex = 1;
-            this.ClientsButton.Text = "&CLIENTS";
-            this.ClientsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.ClientsButton.UseVisualStyleBackColor = false;
-            this.ClientsButton.Click += new System.EventHandler(this.ClientsButton_Click);
+            ClientsButton.Cursor = Cursors.Hand;
+            ClientsButton.Dock = DockStyle.Top;
+            ClientsButton.FlatAppearance.BorderSize = 0;
+            ClientsButton.FlatStyle = FlatStyle.Flat;
+            ClientsButton.ForeColor = Color.WhiteSmoke;
+            ClientsButton.Location = new Point(0, 81);
+            ClientsButton.Margin = new Padding(5, 6, 5, 6);
+            ClientsButton.Name = "ClientsButton";
+            ClientsButton.Size = new Size(333, 81);
+            ClientsButton.TabIndex = 1;
+            ClientsButton.Text = "&CLIENTS";
+            ClientsButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+            ClientsButton.UseVisualStyleBackColor = false;
+            ClientsButton.Click += ClientsButton_Click;
             // 
             // AppointmentsButton
             // 
-            this.AppointmentsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AppointmentsButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.AppointmentsButton.FlatAppearance.BorderSize = 0;
-            this.AppointmentsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AppointmentsButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.AppointmentsButton.Location = new System.Drawing.Point(0, 0);
-            this.AppointmentsButton.Name = "AppointmentsButton";
-            this.AppointmentsButton.Size = new System.Drawing.Size(200, 42);
-            this.AppointmentsButton.TabIndex = 0;
-            this.AppointmentsButton.Text = "&APPOINTMENTS";
-            this.AppointmentsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.AppointmentsButton.UseVisualStyleBackColor = false;
+            AppointmentsButton.Cursor = Cursors.Hand;
+            AppointmentsButton.Dock = DockStyle.Top;
+            AppointmentsButton.FlatAppearance.BorderSize = 0;
+            AppointmentsButton.FlatStyle = FlatStyle.Flat;
+            AppointmentsButton.ForeColor = Color.WhiteSmoke;
+            AppointmentsButton.Location = new Point(0, 0);
+            AppointmentsButton.Margin = new Padding(5, 6, 5, 6);
+            AppointmentsButton.Name = "AppointmentsButton";
+            AppointmentsButton.Size = new Size(333, 81);
+            AppointmentsButton.TabIndex = 0;
+            AppointmentsButton.Text = "&APPOINTMENTS";
+            AppointmentsButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+            AppointmentsButton.UseVisualStyleBackColor = false;
             // 
             // LogOutButton
             // 
-            this.LogOutButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LogOutButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.LogOutButton.FlatAppearance.BorderSize = 0;
-            this.LogOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LogOutButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.LogOutButton.Location = new System.Drawing.Point(0, 631);
-            this.LogOutButton.Name = "LogOutButton";
-            this.LogOutButton.Size = new System.Drawing.Size(200, 42);
-            this.LogOutButton.TabIndex = 5;
-            this.LogOutButton.Text = "LOG &OUT";
-            this.LogOutButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.LogOutButton.UseVisualStyleBackColor = false;
-            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
+            LogOutButton.Cursor = Cursors.Hand;
+            LogOutButton.Dock = DockStyle.Bottom;
+            LogOutButton.FlatAppearance.BorderSize = 0;
+            LogOutButton.FlatStyle = FlatStyle.Flat;
+            LogOutButton.ForeColor = Color.WhiteSmoke;
+            LogOutButton.Location = new Point(0, 1213);
+            LogOutButton.Margin = new Padding(5, 6, 5, 6);
+            LogOutButton.Name = "LogOutButton";
+            LogOutButton.Size = new Size(333, 81);
+            LogOutButton.TabIndex = 5;
+            LogOutButton.Text = "LOG &OUT";
+            LogOutButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+            LogOutButton.UseVisualStyleBackColor = false;
+            LogOutButton.Click += LogOutButton_Click;
             // 
             // HelpButton
             // 
-            this.HelpButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HelpButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.HelpButton.FlatAppearance.BorderSize = 0;
-            this.HelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HelpButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.HelpButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HelpButton.Location = new System.Drawing.Point(0, 673);
-            this.HelpButton.Name = "HelpButton";
-            this.HelpButton.Size = new System.Drawing.Size(200, 42);
-            this.HelpButton.TabIndex = 6;
-            this.HelpButton.Text = "&HELP";
-            this.HelpButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.HelpButton.UseVisualStyleBackColor = false;
+            HelpButton.Cursor = Cursors.Hand;
+            HelpButton.Dock = DockStyle.Bottom;
+            HelpButton.FlatAppearance.BorderSize = 0;
+            HelpButton.FlatStyle = FlatStyle.Flat;
+            HelpButton.ForeColor = Color.WhiteSmoke;
+            HelpButton.ImageAlign = ContentAlignment.MiddleRight;
+            HelpButton.Location = new Point(0, 1294);
+            HelpButton.Margin = new Padding(5, 6, 5, 6);
+            HelpButton.Name = "HelpButton";
+            HelpButton.Size = new Size(333, 81);
+            HelpButton.TabIndex = 6;
+            HelpButton.Text = "&HELP";
+            HelpButton.TextImageRelation = TextImageRelation.TextBeforeImage;
+            HelpButton.UseVisualStyleBackColor = false;
             // 
             // SidebarPanel
             // 
-            this.SidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(64)))), ((int)(((byte)(87)))));
-            this.SidebarPanel.Controls.Add(this.ButtonPanel);
-            this.SidebarPanel.Controls.Add(this.UserPanel);
-            this.SidebarPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SidebarPanel.Location = new System.Drawing.Point(0, 25);
-            this.SidebarPanel.Name = "SidebarPanel";
-            this.SidebarPanel.Size = new System.Drawing.Size(200, 875);
-            this.SidebarPanel.TabIndex = 39;
+            SidebarPanel.BackColor = Color.FromArgb(51, 64, 87);
+            SidebarPanel.Controls.Add(ButtonPanel);
+            SidebarPanel.Controls.Add(UserPanel);
+            SidebarPanel.Dock = DockStyle.Left;
+            SidebarPanel.Location = new Point(0, 35);
+            SidebarPanel.Margin = new Padding(5, 6, 5, 6);
+            SidebarPanel.Name = "SidebarPanel";
+            SidebarPanel.Size = new Size(333, 1696);
+            SidebarPanel.TabIndex = 39;
             // 
             // AdminPanel
             // 
-            this.AdminPanel.Controls.Add(this.clientsControl1);
-            this.AdminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AdminPanel.Location = new System.Drawing.Point(1594, 25);
-            this.AdminPanel.Name = "AdminPanel";
-            this.AdminPanel.Size = new System.Drawing.Size(6, 875);
-            this.AdminPanel.TabIndex = 2;
-            // 
-            // clientsControl1
-            // 
-            this.clientsControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.clientsControl1.Location = new System.Drawing.Point(0, 0);
-            this.clientsControl1.Margin = new System.Windows.Forms.Padding(2);
-            this.clientsControl1.Name = "clientsControl1";
-            this.clientsControl1.Size = new System.Drawing.Size(6, 875);
-            this.clientsControl1.TabIndex = 7;
+            AdminPanel.Dock = DockStyle.Fill;
+            AdminPanel.Location = new Point(2656, 35);
+            AdminPanel.Margin = new Padding(5, 6, 5, 6);
+            AdminPanel.Name = "AdminPanel";
+            AdminPanel.Size = new Size(11, 1696);
+            AdminPanel.TabIndex = 2;
             // 
             // ScheduleDTabPage
             // 
-            this.ScheduleDTabPage.Controls.Add(this.scheduleD1);
-            this.ScheduleDTabPage.Location = new System.Drawing.Point(4, 22);
-            this.ScheduleDTabPage.Margin = new System.Windows.Forms.Padding(2);
-            this.ScheduleDTabPage.Name = "ScheduleDTabPage";
-            this.ScheduleDTabPage.Size = new System.Drawing.Size(1386, 849);
-            this.ScheduleDTabPage.TabIndex = 4;
-            this.ScheduleDTabPage.Text = "Schedule D";
-            this.ScheduleDTabPage.UseVisualStyleBackColor = true;
+            ScheduleDTabPage.Controls.Add(scheduleD1);
+            ScheduleDTabPage.Location = new Point(4, 34);
+            ScheduleDTabPage.Margin = new Padding(3, 4, 3, 4);
+            ScheduleDTabPage.Name = "ScheduleDTabPage";
+            ScheduleDTabPage.Size = new Size(2315, 1658);
+            ScheduleDTabPage.TabIndex = 4;
+            ScheduleDTabPage.Text = "Schedule D";
+            ScheduleDTabPage.UseVisualStyleBackColor = true;
             // 
             // scheduleD1
             // 
-            this.scheduleD1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.scheduleD1.Location = new System.Drawing.Point(4, 4);
-            this.scheduleD1.Name = "scheduleD1";
-            this.scheduleD1.Size = new System.Drawing.Size(722, 194);
-            this.scheduleD1.TabIndex = 0;
+            scheduleD1.BackColor = Color.FromArgb(224, 224, 224);
+            scheduleD1.Location = new Point(7, 8);
+            scheduleD1.Margin = new Padding(8, 12, 8, 12);
+            scheduleD1.Name = "scheduleD1";
+            scheduleD1.Size = new Size(1203, 373);
+            scheduleD1.TabIndex = 0;
             // 
             // Form1098_ETabPage
             // 
-            this.Form1098_ETabPage.Controls.Add(this.form1098_E1);
-            this.Form1098_ETabPage.Location = new System.Drawing.Point(4, 22);
-            this.Form1098_ETabPage.Margin = new System.Windows.Forms.Padding(2);
-            this.Form1098_ETabPage.Name = "Form1098_ETabPage";
-            this.Form1098_ETabPage.Size = new System.Drawing.Size(1386, 849);
-            this.Form1098_ETabPage.TabIndex = 3;
-            this.Form1098_ETabPage.Text = "1098-E";
-            this.Form1098_ETabPage.UseVisualStyleBackColor = true;
+            Form1098_ETabPage.Controls.Add(form1098_E1);
+            Form1098_ETabPage.Location = new Point(4, 34);
+            Form1098_ETabPage.Margin = new Padding(3, 4, 3, 4);
+            Form1098_ETabPage.Name = "Form1098_ETabPage";
+            Form1098_ETabPage.Size = new Size(2315, 1658);
+            Form1098_ETabPage.TabIndex = 3;
+            Form1098_ETabPage.Text = "1098-E";
+            Form1098_ETabPage.UseVisualStyleBackColor = true;
             // 
             // form1098_E1
             // 
-            this.form1098_E1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.form1098_E1.Location = new System.Drawing.Point(4, 4);
-            this.form1098_E1.Name = "form1098_E1";
-            this.form1098_E1.Size = new System.Drawing.Size(341, 275);
-            this.form1098_E1.TabIndex = 0;
+            form1098_E1.BackColor = Color.FromArgb(224, 224, 224);
+            form1098_E1.Location = new Point(7, 8);
+            form1098_E1.Margin = new Padding(7, 13, 7, 13);
+            form1098_E1.Name = "form1098_E1";
+            form1098_E1.Size = new Size(568, 529);
+            form1098_E1.TabIndex = 0;
             // 
             // ScheduleK_1TabPage
             // 
-            this.ScheduleK_1TabPage.Controls.Add(this.scheduleK_11);
-            this.ScheduleK_1TabPage.Location = new System.Drawing.Point(4, 22);
-            this.ScheduleK_1TabPage.Margin = new System.Windows.Forms.Padding(2);
-            this.ScheduleK_1TabPage.Name = "ScheduleK_1TabPage";
-            this.ScheduleK_1TabPage.Size = new System.Drawing.Size(1386, 849);
-            this.ScheduleK_1TabPage.TabIndex = 2;
-            this.ScheduleK_1TabPage.Text = "ScheduleK-1";
-            this.ScheduleK_1TabPage.UseVisualStyleBackColor = true;
+            ScheduleK_1TabPage.Controls.Add(scheduleK_11);
+            ScheduleK_1TabPage.Location = new Point(4, 34);
+            ScheduleK_1TabPage.Margin = new Padding(3, 4, 3, 4);
+            ScheduleK_1TabPage.Name = "ScheduleK_1TabPage";
+            ScheduleK_1TabPage.Size = new Size(2315, 1658);
+            ScheduleK_1TabPage.TabIndex = 2;
+            ScheduleK_1TabPage.Text = "ScheduleK-1";
+            ScheduleK_1TabPage.UseVisualStyleBackColor = true;
             // 
             // scheduleK_11
             // 
-            this.scheduleK_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.scheduleK_11.Location = new System.Drawing.Point(4, 4);
-            this.scheduleK_11.Name = "scheduleK_11";
-            this.scheduleK_11.Size = new System.Drawing.Size(747, 633);
-            this.scheduleK_11.TabIndex = 0;
-            // 
-            // Form1040TabPage
-            // 
-            this.Form1040TabPage.AutoScroll = true;
-            this.Form1040TabPage.Controls.Add(this.form10401);
-            this.Form1040TabPage.Location = new System.Drawing.Point(4, 22);
-            this.Form1040TabPage.Name = "Form1040TabPage";
-            this.Form1040TabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.Form1040TabPage.Size = new System.Drawing.Size(1386, 849);
-            this.Form1040TabPage.TabIndex = 1;
-            this.Form1040TabPage.Text = "Form1040";
-            this.Form1040TabPage.UseVisualStyleBackColor = true;
-            // 
-            // form10401
-            // 
-            this.form10401.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.form10401.Location = new System.Drawing.Point(7, 7);
-            this.form10401.Name = "form10401";
-            this.form10401.Size = new System.Drawing.Size(785, 884);
-            this.form10401.TabIndex = 0;
+            scheduleK_11.BackColor = Color.FromArgb(224, 224, 224);
+            scheduleK_11.Location = new Point(7, 8);
+            scheduleK_11.Margin = new Padding(7, 12, 7, 12);
+            scheduleK_11.Name = "scheduleK_11";
+            scheduleK_11.Size = new Size(1245, 1217);
+            scheduleK_11.TabIndex = 0;
             // 
             // FormW2TabPage
             // 
-            this.FormW2TabPage.Controls.Add(this.w2UserControl1);
-            this.FormW2TabPage.Location = new System.Drawing.Point(4, 22);
-            this.FormW2TabPage.Name = "FormW2TabPage";
-            this.FormW2TabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.FormW2TabPage.Size = new System.Drawing.Size(1386, 849);
-            this.FormW2TabPage.TabIndex = 0;
-            this.FormW2TabPage.Text = "Form W2";
-            this.FormW2TabPage.UseVisualStyleBackColor = true;
+            FormW2TabPage.Controls.Add(w2UserControl1);
+            FormW2TabPage.Location = new Point(4, 34);
+            FormW2TabPage.Margin = new Padding(5, 6, 5, 6);
+            FormW2TabPage.Name = "FormW2TabPage";
+            FormW2TabPage.Padding = new Padding(5, 6, 5, 6);
+            FormW2TabPage.Size = new Size(2315, 1658);
+            FormW2TabPage.TabIndex = 0;
+            FormW2TabPage.Text = "Form W2";
+            FormW2TabPage.UseVisualStyleBackColor = true;
             // 
             // TaxFormsTabControl
             // 
-            this.TaxFormsTabControl.Controls.Add(this.FormW2TabPage);
-            this.TaxFormsTabControl.Controls.Add(this.Form1040TabPage);
-            this.TaxFormsTabControl.Controls.Add(this.ScheduleK_1TabPage);
-            this.TaxFormsTabControl.Controls.Add(this.Form1098_ETabPage);
-            this.TaxFormsTabControl.Controls.Add(this.ScheduleDTabPage);
-            this.TaxFormsTabControl.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TaxFormsTabControl.Location = new System.Drawing.Point(200, 25);
-            this.TaxFormsTabControl.Name = "TaxFormsTabControl";
-            this.TaxFormsTabControl.SelectedIndex = 0;
-            this.TaxFormsTabControl.Size = new System.Drawing.Size(1394, 875);
-            this.TaxFormsTabControl.TabIndex = 0;
+            TaxFormsTabControl.Controls.Add(FormW2TabPage);
+            TaxFormsTabControl.Controls.Add(Form1040TabPage);
+            TaxFormsTabControl.Controls.Add(ScheduleK_1TabPage);
+            TaxFormsTabControl.Controls.Add(Form1098_ETabPage);
+            TaxFormsTabControl.Controls.Add(ScheduleDTabPage);
+            TaxFormsTabControl.Dock = DockStyle.Left;
+            TaxFormsTabControl.Location = new Point(333, 35);
+            TaxFormsTabControl.Margin = new Padding(5, 6, 5, 6);
+            TaxFormsTabControl.Name = "TaxFormsTabControl";
+            TaxFormsTabControl.SelectedIndex = 0;
+            TaxFormsTabControl.Size = new Size(2323, 1696);
+            TaxFormsTabControl.TabIndex = 0;
             // 
             // w2UserControl1
             // 
-            this.w2UserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.w2UserControl1.Location = new System.Drawing.Point(7, 7);
-            this.w2UserControl1.Name = "w2UserControl1";
-            this.w2UserControl1.Size = new System.Drawing.Size(995, 612);
-            this.w2UserControl1.TabIndex = 0;
+            w2UserControl1.BackColor = Color.FromArgb(224, 224, 224);
+            w2UserControl1.Location = new Point(10, 0);
+            w2UserControl1.Margin = new Padding(5, 6, 5, 6);
+            w2UserControl1.Name = "w2UserControl1";
+            w2UserControl1.Size = new Size(2487, 1766);
+            w2UserControl1.TabIndex = 0;
+            // 
+            // Form1040TabPage
+            // 
+            Form1040TabPage.AutoScroll = true;
+            Form1040TabPage.Location = new Point(4, 34);
+            Form1040TabPage.Margin = new Padding(5, 6, 5, 6);
+            Form1040TabPage.Name = "Form1040TabPage";
+            Form1040TabPage.Padding = new Padding(5, 6, 5, 6);
+            Form1040TabPage.Size = new Size(2315, 1658);
+            Form1040TabPage.TabIndex = 1;
+            Form1040TabPage.Text = "Form1040";
+            Form1040TabPage.UseVisualStyleBackColor = true;
             // 
             // DashboardControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.AdminPanel);
-            this.Controls.Add(this.TaxFormsTabControl);
-            this.Controls.Add(this.SidebarPanel);
-            this.Controls.Add(this.MenuStrip);
-            this.Name = "DashboardControl";
-            this.Size = new System.Drawing.Size(1600, 900);
-            this.Load += new System.EventHandler(this.DashboardControl_Load);
-            this.MenuStrip.ResumeLayout(false);
-            this.MenuStrip.PerformLayout();
-            this.UserPanel.ResumeLayout(false);
-            this.UserPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UserPictureBox)).EndInit();
-            this.ButtonPanel.ResumeLayout(false);
-            this.SidebarPanel.ResumeLayout(false);
-            this.AdminPanel.ResumeLayout(false);
-            this.ScheduleDTabPage.ResumeLayout(false);
-            this.Form1098_ETabPage.ResumeLayout(false);
-            this.ScheduleK_1TabPage.ResumeLayout(false);
-            this.Form1040TabPage.ResumeLayout(false);
-            this.FormW2TabPage.ResumeLayout(false);
-            this.TaxFormsTabControl.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(AdminPanel);
+            Controls.Add(TaxFormsTabControl);
+            Controls.Add(SidebarPanel);
+            Controls.Add(MenuStrip);
+            Margin = new Padding(5, 6, 5, 6);
+            Name = "DashboardControl";
+            Size = new Size(2667, 1731);
+            Load += DashboardControl_Load;
+            MenuStrip.ResumeLayout(false);
+            MenuStrip.PerformLayout();
+            UserPanel.ResumeLayout(false);
+            UserPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)UserPictureBox).EndInit();
+            ButtonPanel.ResumeLayout(false);
+            SidebarPanel.ResumeLayout(false);
+            ScheduleDTabPage.ResumeLayout(false);
+            Form1098_ETabPage.ResumeLayout(false);
+            ScheduleK_1TabPage.ResumeLayout(false);
+            FormW2TabPage.ResumeLayout(false);
+            TaxFormsTabControl.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -603,11 +578,10 @@ namespace TaxApp_v2.Admin_User_Controls
         private Form1098_E form1098_E1;
         private System.Windows.Forms.TabPage ScheduleK_1TabPage;
         private ScheduleK_1 scheduleK_11;
-        private System.Windows.Forms.TabPage Form1040TabPage;
         private System.Windows.Forms.TabPage FormW2TabPage;
         private System.Windows.Forms.TabControl TaxFormsTabControl;
         private ClientsControl clientsControl1;
-        private Form1040 form10401;
         private W2UserControl w2UserControl1;
+        private TabPage Form1040TabPage;
     }
 }
