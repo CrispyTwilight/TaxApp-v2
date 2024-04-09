@@ -1,4 +1,7 @@
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace TaxApp_v2
 {
@@ -10,8 +13,10 @@ namespace TaxApp_v2
         [STAThread]
         static void Main()
         {
+            var host = CreateHostBuilder(new string[0]).Build();
+
             // Create an instance of the DatabaseManager class and create the tables.
-            DatabaseManager dbManager = new DatabaseManager();
+            var dbManager = host.Services.GetRequiredService<DatabaseManager>();
             dbManager.CreateTables();
 
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
@@ -19,8 +24,12 @@ namespace TaxApp_v2
             Application.SetCompatibleTextRenderingDefault(false);
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
-
-
         }
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureServices((hostContext, services) =>
+                {
+                    services.AddSingleton<DatabaseManager>();
+                });
     }
 }

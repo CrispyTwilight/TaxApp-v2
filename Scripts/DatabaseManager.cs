@@ -5,6 +5,7 @@ using Microsoft.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
+using Microsoft.Extensions.Configuration;
 
 namespace TaxApp_v2
 {
@@ -12,18 +13,12 @@ namespace TaxApp_v2
     {
         private readonly string connectionString;
 
-        public DatabaseManager()
+        public DatabaseManager(IConfiguration configuration)
         {
-            // This connection string will need to be updated to the path of the database on your local machine. Click on the Database folder, then right click tax_app_db_v2.mdf and select Properties. Copy the path in the Location field and paste it below for AttachDbFilename.
-            this.connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\John O'Neal\Desktop\TaxApp_v2\Database\tax_app_db_v2.mdf;Integrated Security=True;Connect Timeout=30";
-
-            // Tables are being deleted and overwritten with test data each time the application is run. This code is in Program.cs
+            // This connection string will need to be updated to the path of the database on your local machine. Check appsettings.json for the connection string
+            this.connectionString = configuration.GetConnectionString("DefaultConnection");
         }
-
-        public string GetConnectionString()
-        {
-            return connectionString;
-        }
+        // Tables are being deleted and overwritten with test data each time the application is run. This code is in Program.cs
 
         public void CreateTables()
         {
