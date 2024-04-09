@@ -16,11 +16,10 @@ namespace TaxApp_v2
 
         public DatabaseManager(IConfiguration configuration)
         {
-            // This connection string will need to be updated to the path of the database on your local machine. Check App.config for the connection string
-            this.connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString + ";TrustServerCertificate=true";
-
+            // Install the project on c drive to use the default string. This connection string will need to be updated to the path of the database on your local machine if you choose a different install location. Check App.config for the connection string.
+            this.connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            // Tables are being deleted and overwritten with test data each time the application is run. This code is in Program.cs
         }
-        // Tables are being deleted and overwritten with test data each time the application is run. This code is in Program.cs
 
         public void CreateTables()
         {

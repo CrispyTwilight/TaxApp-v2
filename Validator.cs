@@ -17,7 +17,7 @@ namespace TaxApp_v2
 
         public static string Title
         {
-            get => title; 
+            get => title;
             set => title = value;
         }
 
@@ -34,10 +34,10 @@ namespace TaxApp_v2
         }
 
         //Validates that the text in the TextBox can be converted to a decimal
-        public static bool IsDecimal(TextBox textBox) 
+        public static bool IsDecimal(TextBox textBox)
         {
             decimal number = 0m;
-            if (Decimal.TryParse(textBox.Text, out number))
+            if (decimal.TryParse(textBox.Text, out number))
             {
                 return true;
 
@@ -54,8 +54,8 @@ namespace TaxApp_v2
         public static bool IsInt32(TextBox textBox)
         {
             int number = 0;
-            if (Int32.TryParse(textBox.Text, out number))
-            { 
+            if (int.TryParse(textBox.Text, out number))
+            {
                 return true;
             }
             else
