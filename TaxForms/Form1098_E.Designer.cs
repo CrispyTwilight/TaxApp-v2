@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            rTINTB = new TextBox();
             label1 = new Label();
-            textBox2 = new TextBox();
+            bTINTB = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            textBox3 = new TextBox();
+            rlTB = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
+            slirblTB = new TextBox();
             label6 = new Label();
-            textBox5 = new TextBox();
+            anTB = new TextBox();
             SuspendLayout();
             // 
-            // textBox1
+            // rTINTB
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(3, 197);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(173, 23);
-            textBox1.TabIndex = 0;
+            rTINTB.BorderStyle = BorderStyle.FixedSingle;
+            rTINTB.Location = new Point(3, 197);
+            rTINTB.Margin = new Padding(3, 4, 3, 4);
+            rTINTB.Name = "rTINTB";
+            rTINTB.Size = new Size(173, 23);
+            rTINTB.TabIndex = 0;
             // 
             // label1
             // 
@@ -58,14 +58,14 @@
             label1.TabIndex = 1;
             label1.Text = "Recipient's TIN";
             // 
-            // textBox2
+            // bTINTB
             // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(222, 194);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(173, 23);
-            textBox2.TabIndex = 3;
+            bTINTB.BorderStyle = BorderStyle.FixedSingle;
+            bTINTB.Location = new Point(222, 194);
+            bTINTB.Margin = new Padding(3, 4, 3, 4);
+            bTINTB.Name = "bTINTB";
+            bTINTB.Size = new Size(173, 23);
+            bTINTB.TabIndex = 3;
             // 
             // label3
             // 
@@ -84,15 +84,15 @@
             label4.TabIndex = 6;
             label4.Text = "RECIPIENT’S/LENDER’S name, street address, city or town, state or province, country, ZIP or foreign postal code, and telephone number";
             // 
-            // textBox3
+            // rlTB
             // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(3, 41);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(392, 130);
-            textBox3.TabIndex = 5;
+            rlTB.BorderStyle = BorderStyle.FixedSingle;
+            rlTB.Location = new Point(3, 41);
+            rlTB.Margin = new Padding(3, 4, 3, 4);
+            rlTB.Multiline = true;
+            rlTB.Name = "rlTB";
+            rlTB.Size = new Size(392, 130);
+            rlTB.TabIndex = 5;
             // 
             // label5
             // 
@@ -103,14 +103,14 @@
             label5.TabIndex = 8;
             label5.Text = "Student Loan Interest recieved by lender";
             // 
-            // textBox4
+            // slirblTB
             // 
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(3, 241);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(392, 23);
-            textBox4.TabIndex = 7;
+            slirblTB.BorderStyle = BorderStyle.FixedSingle;
+            slirblTB.Location = new Point(3, 241);
+            slirblTB.Margin = new Padding(3, 4, 3, 4);
+            slirblTB.Name = "slirblTB";
+            slirblTB.Size = new Size(392, 23);
+            slirblTB.TabIndex = 7;
             // 
             // label6
             // 
@@ -121,29 +121,29 @@
             label6.TabIndex = 10;
             label6.Text = "Account number";
             // 
-            // textBox5
+            // anTB
             // 
-            textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.Location = new Point(3, 292);
-            textBox5.Margin = new Padding(3, 4, 3, 4);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(392, 23);
-            textBox5.TabIndex = 9;
+            anTB.BorderStyle = BorderStyle.FixedSingle;
+            anTB.Location = new Point(3, 292);
+            anTB.Margin = new Padding(3, 4, 3, 4);
+            anTB.Name = "anTB";
+            anTB.Size = new Size(392, 23);
+            anTB.TabIndex = 9;
             // 
             // Form1098_E
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(label6);
-            Controls.Add(textBox5);
+            Controls.Add(anTB);
             Controls.Add(label5);
-            Controls.Add(textBox4);
+            Controls.Add(slirblTB);
             Controls.Add(label4);
-            Controls.Add(textBox3);
+            Controls.Add(rlTB);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(bTINTB);
             Controls.Add(label1);
-            Controls.Add(textBox1);
+            Controls.Add(rTINTB);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1098_E";
             Size = new Size(397, 317);
@@ -153,15 +153,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox rTINTB;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox bTINTB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox rlTB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox slirblTB;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox anTB;
     }
 }
