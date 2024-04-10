@@ -9,13 +9,16 @@ This is a .NET Framework application for managing tax forms.
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/CrispyTwilight/Tax_Application`
+1. Clone the repository: `git clone https://github.com/CrispyTwilight/TaxApp-v2`
 2. Open the solution in Visual Studio.
 3. Build the solution.
 
 ## Usage
 
-### Instructions
+### New Instructions
+You will need MS SQL Server 2019. Please install the repository to the C drive so the connection string works. As long as LocalDB is running, the program should run fine. There is some testing data present in the database that comes with the project.
+
+### OLD Instructions
 1. Open MySQL Workbench and run the SQL script located at Database/TaxApp_CREATE.sql to create the database and tables.
 2. Next, open Database/TaxApp_lNSERT_Example.sql and run the script to insert testing data.
 3. Pull up Task Manager and make sure a process called "mysqld" is running. It should be, but if it is not, start it by running the command "net start mysqld" in an admin command prompt.
