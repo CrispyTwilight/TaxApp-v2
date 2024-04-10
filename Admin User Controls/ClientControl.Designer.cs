@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             savingsRadioButton = new RadioButton();
             checkingRadioButton = new RadioButton();
             client_idLabel = new Label();
@@ -66,25 +67,49 @@
             routing_numberTextBox = new TextBox();
             account_numberLabel = new Label();
             account_numberTextBox = new TextBox();
-            checkingLabel = new Label();
-            savingsLabel = new Label();
             user_idLabel = new Label();
             user_idTextBox = new TextBox();
             DeleteButton = new Button();
-            UpdateButton = new Button();
-            ReadButton = new Button();
-            CreateButton = new Button();
+            CreateNewButton = new Button();
             RefreshButton = new Button();
             SaveButton = new Button();
-            ClientsLabel = new Label();
-            SearchLabel = new Label();
-            WagesTipsOtherCompensationTextBox = new TextBox();
+            clientTitleLabel = new Label();
+            searchLabel = new Label();
+            searchTextBox = new TextBox();
+            accountTypePanel = new Panel();
+            ClientDataGridView = new DataGridView();
+            clientIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            firstNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            middleNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            lastNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            suffixDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ssnDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            birthDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            homePhoneDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            mobilePhoneDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            emailDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            addressLine1DataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            addressLine2DataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            cityDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            stateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            zipDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            occupationDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            routingNumberDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            accountNumberDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            checkingDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            savingsDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            userIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            clientBindingSource = new BindingSource(components);
+            TaxFormsButton = new Button();
+            accountTypePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ClientDataGridView).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)clientBindingSource).BeginInit();
             SuspendLayout();
             // 
             // savingsRadioButton
             // 
             savingsRadioButton.AutoSize = true;
-            savingsRadioButton.Location = new Point(1053, 209);
+            savingsRadioButton.Location = new Point(15, 25);
             savingsRadioButton.Name = "savingsRadioButton";
             savingsRadioButton.Size = new Size(65, 19);
             savingsRadioButton.TabIndex = 102;
@@ -95,7 +120,7 @@
             // checkingRadioButton
             // 
             checkingRadioButton.AutoSize = true;
-            checkingRadioButton.Location = new Point(1053, 188);
+            checkingRadioButton.Location = new Point(15, 4);
             checkingRadioButton.Name = "checkingRadioButton";
             checkingRadioButton.Size = new Size(75, 19);
             checkingRadioButton.TabIndex = 101;
@@ -106,34 +131,35 @@
             // client_idLabel
             // 
             client_idLabel.AutoSize = true;
-            client_idLabel.Location = new Point(44, 117);
+            client_idLabel.Location = new Point(23, 260);
             client_idLabel.Margin = new Padding(2, 0, 2, 0);
             client_idLabel.Name = "client_idLabel";
-            client_idLabel.Size = new Size(52, 15);
+            client_idLabel.Size = new Size(55, 15);
             client_idLabel.TabIndex = 61;
-            client_idLabel.Text = "client id:";
+            client_idLabel.Text = "Client ID:";
             // 
             // client_idTextBox
             // 
-            client_idTextBox.Location = new Point(148, 115);
+            client_idTextBox.Location = new Point(127, 258);
             client_idTextBox.Margin = new Padding(2);
             client_idTextBox.Name = "client_idTextBox";
+            client_idTextBox.ReadOnly = true;
             client_idTextBox.Size = new Size(156, 23);
             client_idTextBox.TabIndex = 62;
             // 
             // first_nameLabel
             // 
             first_nameLabel.AutoSize = true;
-            first_nameLabel.Location = new Point(44, 141);
+            first_nameLabel.Location = new Point(23, 284);
             first_nameLabel.Margin = new Padding(2, 0, 2, 0);
             first_nameLabel.Name = "first_nameLabel";
-            first_nameLabel.Size = new Size(63, 15);
+            first_nameLabel.Size = new Size(67, 15);
             first_nameLabel.TabIndex = 63;
-            first_nameLabel.Text = "first name:";
+            first_nameLabel.Text = "First Name:";
             // 
             // first_nameTextBox
             // 
-            first_nameTextBox.Location = new Point(148, 139);
+            first_nameTextBox.Location = new Point(127, 282);
             first_nameTextBox.Margin = new Padding(2);
             first_nameTextBox.Name = "first_nameTextBox";
             first_nameTextBox.Size = new Size(156, 23);
@@ -142,16 +168,16 @@
             // middle_nameLabel
             // 
             middle_nameLabel.AutoSize = true;
-            middle_nameLabel.Location = new Point(44, 165);
+            middle_nameLabel.Location = new Point(23, 308);
             middle_nameLabel.Margin = new Padding(2, 0, 2, 0);
             middle_nameLabel.Name = "middle_nameLabel";
-            middle_nameLabel.Size = new Size(80, 15);
+            middle_nameLabel.Size = new Size(82, 15);
             middle_nameLabel.TabIndex = 65;
-            middle_nameLabel.Text = "middle name:";
+            middle_nameLabel.Text = "Middle Name:";
             // 
             // middle_nameTextBox
             // 
-            middle_nameTextBox.Location = new Point(148, 163);
+            middle_nameTextBox.Location = new Point(127, 306);
             middle_nameTextBox.Margin = new Padding(2);
             middle_nameTextBox.Name = "middle_nameTextBox";
             middle_nameTextBox.Size = new Size(156, 23);
@@ -160,16 +186,16 @@
             // last_nameLabel
             // 
             last_nameLabel.AutoSize = true;
-            last_nameLabel.Location = new Point(44, 189);
+            last_nameLabel.Location = new Point(23, 332);
             last_nameLabel.Margin = new Padding(2, 0, 2, 0);
             last_nameLabel.Name = "last_nameLabel";
-            last_nameLabel.Size = new Size(61, 15);
+            last_nameLabel.Size = new Size(66, 15);
             last_nameLabel.TabIndex = 67;
-            last_nameLabel.Text = "last name:";
+            last_nameLabel.Text = "Last Name:";
             // 
             // last_nameTextBox
             // 
-            last_nameTextBox.Location = new Point(148, 187);
+            last_nameTextBox.Location = new Point(127, 330);
             last_nameTextBox.Margin = new Padding(2);
             last_nameTextBox.Name = "last_nameTextBox";
             last_nameTextBox.Size = new Size(156, 23);
@@ -178,16 +204,16 @@
             // suffixLabel
             // 
             suffixLabel.AutoSize = true;
-            suffixLabel.Location = new Point(44, 213);
+            suffixLabel.Location = new Point(23, 356);
             suffixLabel.Margin = new Padding(2, 0, 2, 0);
             suffixLabel.Name = "suffixLabel";
-            suffixLabel.Size = new Size(39, 15);
+            suffixLabel.Size = new Size(40, 15);
             suffixLabel.TabIndex = 69;
-            suffixLabel.Text = "suffix:";
+            suffixLabel.Text = "Suffix:";
             // 
             // suffixTextBox
             // 
-            suffixTextBox.Location = new Point(148, 211);
+            suffixTextBox.Location = new Point(127, 354);
             suffixTextBox.Margin = new Padding(2);
             suffixTextBox.Name = "suffixTextBox";
             suffixTextBox.Size = new Size(156, 23);
@@ -196,16 +222,16 @@
             // ssnLabel
             // 
             ssnLabel.AutoSize = true;
-            ssnLabel.Location = new Point(334, 117);
+            ssnLabel.Location = new Point(313, 260);
             ssnLabel.Margin = new Padding(2, 0, 2, 0);
             ssnLabel.Name = "ssnLabel";
-            ssnLabel.Size = new Size(27, 15);
+            ssnLabel.Size = new Size(31, 15);
             ssnLabel.TabIndex = 71;
-            ssnLabel.Text = "ssn:";
+            ssnLabel.Text = "SSN:";
             // 
             // ssnTextBox
             // 
-            ssnTextBox.Location = new Point(438, 115);
+            ssnTextBox.Location = new Point(417, 258);
             ssnTextBox.Margin = new Padding(2);
             ssnTextBox.Name = "ssnTextBox";
             ssnTextBox.Size = new Size(156, 23);
@@ -214,17 +240,17 @@
             // birth_dateLabel
             // 
             birth_dateLabel.AutoSize = true;
-            birth_dateLabel.Location = new Point(334, 142);
+            birth_dateLabel.Location = new Point(313, 285);
             birth_dateLabel.Margin = new Padding(2, 0, 2, 0);
             birth_dateLabel.Name = "birth_dateLabel";
-            birth_dateLabel.Size = new Size(61, 15);
+            birth_dateLabel.Size = new Size(62, 15);
             birth_dateLabel.TabIndex = 73;
-            birth_dateLabel.Text = "birth date:";
+            birth_dateLabel.Text = "Birth Date:";
             // 
             // birth_dateDateTimePicker
             // 
             birth_dateDateTimePicker.Format = DateTimePickerFormat.Short;
-            birth_dateDateTimePicker.Location = new Point(438, 139);
+            birth_dateDateTimePicker.Location = new Point(417, 282);
             birth_dateDateTimePicker.Margin = new Padding(2);
             birth_dateDateTimePicker.Name = "birth_dateDateTimePicker";
             birth_dateDateTimePicker.Size = new Size(156, 23);
@@ -233,16 +259,16 @@
             // home_phoneLabel
             // 
             home_phoneLabel.AutoSize = true;
-            home_phoneLabel.Location = new Point(334, 165);
+            home_phoneLabel.Location = new Point(313, 308);
             home_phoneLabel.Margin = new Padding(2, 0, 2, 0);
             home_phoneLabel.Name = "home_phoneLabel";
-            home_phoneLabel.Size = new Size(78, 15);
+            home_phoneLabel.Size = new Size(80, 15);
             home_phoneLabel.TabIndex = 75;
-            home_phoneLabel.Text = "home phone:";
+            home_phoneLabel.Text = "Home Phone:";
             // 
             // home_phoneTextBox
             // 
-            home_phoneTextBox.Location = new Point(438, 163);
+            home_phoneTextBox.Location = new Point(417, 306);
             home_phoneTextBox.Margin = new Padding(2);
             home_phoneTextBox.Name = "home_phoneTextBox";
             home_phoneTextBox.Size = new Size(156, 23);
@@ -251,16 +277,16 @@
             // mobile_phoneLabel
             // 
             mobile_phoneLabel.AutoSize = true;
-            mobile_phoneLabel.Location = new Point(334, 189);
+            mobile_phoneLabel.Location = new Point(313, 332);
             mobile_phoneLabel.Margin = new Padding(2, 0, 2, 0);
             mobile_phoneLabel.Name = "mobile_phoneLabel";
             mobile_phoneLabel.Size = new Size(84, 15);
             mobile_phoneLabel.TabIndex = 77;
-            mobile_phoneLabel.Text = "mobile phone:";
+            mobile_phoneLabel.Text = "Mobile Phone:";
             // 
             // mobile_phoneTextBox
             // 
-            mobile_phoneTextBox.Location = new Point(438, 187);
+            mobile_phoneTextBox.Location = new Point(417, 330);
             mobile_phoneTextBox.Margin = new Padding(2);
             mobile_phoneTextBox.Name = "mobile_phoneTextBox";
             mobile_phoneTextBox.Size = new Size(156, 23);
@@ -269,16 +295,16 @@
             // emailLabel
             // 
             emailLabel.AutoSize = true;
-            emailLabel.Location = new Point(334, 213);
+            emailLabel.Location = new Point(313, 356);
             emailLabel.Margin = new Padding(2, 0, 2, 0);
             emailLabel.Name = "emailLabel";
             emailLabel.Size = new Size(39, 15);
             emailLabel.TabIndex = 79;
-            emailLabel.Text = "email:";
+            emailLabel.Text = "Email:";
             // 
             // emailTextBox
             // 
-            emailTextBox.Location = new Point(438, 211);
+            emailTextBox.Location = new Point(417, 354);
             emailTextBox.Margin = new Padding(2);
             emailTextBox.Name = "emailTextBox";
             emailTextBox.Size = new Size(156, 23);
@@ -287,16 +313,16 @@
             // address_line1Label
             // 
             address_line1Label.AutoSize = true;
-            address_line1Label.Location = new Point(623, 117);
+            address_line1Label.Location = new Point(602, 260);
             address_line1Label.Margin = new Padding(2, 0, 2, 0);
             address_line1Label.Name = "address_line1Label";
-            address_line1Label.Size = new Size(78, 15);
+            address_line1Label.Size = new Size(86, 15);
             address_line1Label.TabIndex = 81;
-            address_line1Label.Text = "address line1:";
+            address_line1Label.Text = "Address Line 1:";
             // 
             // address_line1TextBox
             // 
-            address_line1TextBox.Location = new Point(727, 115);
+            address_line1TextBox.Location = new Point(706, 258);
             address_line1TextBox.Margin = new Padding(2);
             address_line1TextBox.Name = "address_line1TextBox";
             address_line1TextBox.Size = new Size(156, 23);
@@ -305,16 +331,16 @@
             // address_line2Label
             // 
             address_line2Label.AutoSize = true;
-            address_line2Label.Location = new Point(623, 141);
+            address_line2Label.Location = new Point(602, 284);
             address_line2Label.Margin = new Padding(2, 0, 2, 0);
             address_line2Label.Name = "address_line2Label";
-            address_line2Label.Size = new Size(78, 15);
+            address_line2Label.Size = new Size(86, 15);
             address_line2Label.TabIndex = 83;
-            address_line2Label.Text = "address line2:";
+            address_line2Label.Text = "Address Line 2:";
             // 
             // address_line2TextBox
             // 
-            address_line2TextBox.Location = new Point(727, 139);
+            address_line2TextBox.Location = new Point(706, 282);
             address_line2TextBox.Margin = new Padding(2);
             address_line2TextBox.Name = "address_line2TextBox";
             address_line2TextBox.Size = new Size(156, 23);
@@ -323,16 +349,16 @@
             // cityLabel
             // 
             cityLabel.AutoSize = true;
-            cityLabel.Location = new Point(623, 165);
+            cityLabel.Location = new Point(602, 308);
             cityLabel.Margin = new Padding(2, 0, 2, 0);
             cityLabel.Name = "cityLabel";
-            cityLabel.Size = new Size(29, 15);
+            cityLabel.Size = new Size(31, 15);
             cityLabel.TabIndex = 85;
-            cityLabel.Text = "city:";
+            cityLabel.Text = "City:";
             // 
             // cityTextBox
             // 
-            cityTextBox.Location = new Point(727, 163);
+            cityTextBox.Location = new Point(706, 306);
             cityTextBox.Margin = new Padding(2);
             cityTextBox.Name = "cityTextBox";
             cityTextBox.Size = new Size(156, 23);
@@ -341,16 +367,16 @@
             // stateLabel
             // 
             stateLabel.AutoSize = true;
-            stateLabel.Location = new Point(623, 189);
+            stateLabel.Location = new Point(602, 332);
             stateLabel.Margin = new Padding(2, 0, 2, 0);
             stateLabel.Name = "stateLabel";
-            stateLabel.Size = new Size(35, 15);
+            stateLabel.Size = new Size(36, 15);
             stateLabel.TabIndex = 87;
-            stateLabel.Text = "state:";
+            stateLabel.Text = "State:";
             // 
             // stateTextBox
             // 
-            stateTextBox.Location = new Point(727, 187);
+            stateTextBox.Location = new Point(706, 330);
             stateTextBox.Margin = new Padding(2);
             stateTextBox.Name = "stateTextBox";
             stateTextBox.Size = new Size(156, 23);
@@ -359,16 +385,16 @@
             // zipLabel
             // 
             zipLabel.AutoSize = true;
-            zipLabel.Location = new Point(623, 213);
+            zipLabel.Location = new Point(602, 356);
             zipLabel.Margin = new Padding(2, 0, 2, 0);
             zipLabel.Name = "zipLabel";
-            zipLabel.Size = new Size(25, 15);
+            zipLabel.Size = new Size(27, 15);
             zipLabel.TabIndex = 89;
-            zipLabel.Text = "zip:";
+            zipLabel.Text = "ZIP:";
             // 
             // zipTextBox
             // 
-            zipTextBox.Location = new Point(727, 211);
+            zipTextBox.Location = new Point(706, 354);
             zipTextBox.Margin = new Padding(2);
             zipTextBox.Name = "zipTextBox";
             zipTextBox.Size = new Size(156, 23);
@@ -377,16 +403,16 @@
             // occupationLabel
             // 
             occupationLabel.AutoSize = true;
-            occupationLabel.Location = new Point(949, 117);
+            occupationLabel.Location = new Point(928, 260);
             occupationLabel.Margin = new Padding(2, 0, 2, 0);
             occupationLabel.Name = "occupationLabel";
-            occupationLabel.Size = new Size(70, 15);
+            occupationLabel.Size = new Size(72, 15);
             occupationLabel.TabIndex = 91;
-            occupationLabel.Text = "occupation:";
+            occupationLabel.Text = "Occupation:";
             // 
             // occupationTextBox
             // 
-            occupationTextBox.Location = new Point(1053, 115);
+            occupationTextBox.Location = new Point(1032, 258);
             occupationTextBox.Margin = new Padding(2);
             occupationTextBox.Name = "occupationTextBox";
             occupationTextBox.Size = new Size(156, 23);
@@ -395,16 +421,16 @@
             // routing_numberLabel
             // 
             routing_numberLabel.AutoSize = true;
-            routing_numberLabel.Location = new Point(949, 141);
+            routing_numberLabel.Location = new Point(928, 284);
             routing_numberLabel.Margin = new Padding(2, 0, 2, 0);
             routing_numberLabel.Name = "routing_numberLabel";
-            routing_numberLabel.Size = new Size(94, 15);
+            routing_numberLabel.Size = new Size(99, 15);
             routing_numberLabel.TabIndex = 93;
-            routing_numberLabel.Text = "routing number:";
+            routing_numberLabel.Text = "Routing Number:";
             // 
             // routing_numberTextBox
             // 
-            routing_numberTextBox.Location = new Point(1053, 139);
+            routing_numberTextBox.Location = new Point(1032, 282);
             routing_numberTextBox.Margin = new Padding(2);
             routing_numberTextBox.Name = "routing_numberTextBox";
             routing_numberTextBox.Size = new Size(156, 23);
@@ -413,158 +439,311 @@
             // account_numberLabel
             // 
             account_numberLabel.AutoSize = true;
-            account_numberLabel.Location = new Point(949, 165);
+            account_numberLabel.Location = new Point(928, 308);
             account_numberLabel.Margin = new Padding(2, 0, 2, 0);
             account_numberLabel.Name = "account_numberLabel";
-            account_numberLabel.Size = new Size(98, 15);
+            account_numberLabel.Size = new Size(102, 15);
             account_numberLabel.TabIndex = 95;
-            account_numberLabel.Text = "account number:";
+            account_numberLabel.Text = "Account Number:";
             // 
             // account_numberTextBox
             // 
-            account_numberTextBox.Location = new Point(1053, 163);
+            account_numberTextBox.Location = new Point(1032, 306);
             account_numberTextBox.Margin = new Padding(2);
             account_numberTextBox.Name = "account_numberTextBox";
             account_numberTextBox.Size = new Size(156, 23);
             account_numberTextBox.TabIndex = 96;
             // 
-            // checkingLabel
-            // 
-            checkingLabel.AutoSize = true;
-            checkingLabel.Location = new Point(949, 190);
-            checkingLabel.Margin = new Padding(2, 0, 2, 0);
-            checkingLabel.Name = "checkingLabel";
-            checkingLabel.Size = new Size(58, 15);
-            checkingLabel.TabIndex = 97;
-            checkingLabel.Text = "checking:";
-            // 
-            // savingsLabel
-            // 
-            savingsLabel.AutoSize = true;
-            savingsLabel.Location = new Point(949, 214);
-            savingsLabel.Margin = new Padding(2, 0, 2, 0);
-            savingsLabel.Name = "savingsLabel";
-            savingsLabel.Size = new Size(49, 15);
-            savingsLabel.TabIndex = 98;
-            savingsLabel.Text = "savings:";
-            // 
             // user_idLabel
             // 
             user_idLabel.AutoSize = true;
-            user_idLabel.Location = new Point(949, 236);
+            user_idLabel.Location = new Point(928, 379);
             user_idLabel.Margin = new Padding(2, 0, 2, 0);
             user_idLabel.Name = "user_idLabel";
-            user_idLabel.Size = new Size(45, 15);
+            user_idLabel.Size = new Size(47, 15);
             user_idLabel.TabIndex = 99;
-            user_idLabel.Text = "user id:";
+            user_idLabel.Text = "User ID:";
             // 
             // user_idTextBox
             // 
-            user_idTextBox.Location = new Point(1053, 233);
+            user_idTextBox.Location = new Point(1032, 376);
             user_idTextBox.Margin = new Padding(2);
             user_idTextBox.Name = "user_idTextBox";
+            user_idTextBox.ReadOnly = true;
             user_idTextBox.Size = new Size(156, 23);
             user_idTextBox.TabIndex = 100;
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(676, 278);
+            DeleteButton.Location = new Point(519, 429);
             DeleteButton.Margin = new Padding(3, 4, 3, 4);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(87, 26);
             DeleteButton.TabIndex = 60;
             DeleteButton.Text = "&Delete";
             DeleteButton.UseVisualStyleBackColor = true;
+            DeleteButton.Click += DeleteButton_Click;
             // 
-            // UpdateButton
+            // CreateNewButton
             // 
-            UpdateButton.Location = new Point(581, 278);
-            UpdateButton.Margin = new Padding(3, 4, 3, 4);
-            UpdateButton.Name = "UpdateButton";
-            UpdateButton.Size = new Size(87, 26);
-            UpdateButton.TabIndex = 59;
-            UpdateButton.Text = "&Update";
-            UpdateButton.UseVisualStyleBackColor = true;
-            // 
-            // ReadButton
-            // 
-            ReadButton.Location = new Point(487, 278);
-            ReadButton.Margin = new Padding(3, 4, 3, 4);
-            ReadButton.Name = "ReadButton";
-            ReadButton.Size = new Size(87, 26);
-            ReadButton.TabIndex = 58;
-            ReadButton.Text = "&Read";
-            ReadButton.UseVisualStyleBackColor = true;
-            // 
-            // CreateButton
-            // 
-            CreateButton.Location = new Point(392, 278);
-            CreateButton.Margin = new Padding(3, 4, 3, 4);
-            CreateButton.Name = "CreateButton";
-            CreateButton.Size = new Size(87, 26);
-            CreateButton.TabIndex = 57;
-            CreateButton.Text = "&Create";
-            CreateButton.UseVisualStyleBackColor = true;
+            CreateNewButton.Location = new Point(426, 429);
+            CreateNewButton.Margin = new Padding(3, 4, 3, 4);
+            CreateNewButton.Name = "CreateNewButton";
+            CreateNewButton.Size = new Size(87, 26);
+            CreateNewButton.TabIndex = 57;
+            CreateNewButton.Text = "&Create New";
+            CreateNewButton.UseVisualStyleBackColor = true;
+            CreateNewButton.Click += CreateNewButton_Click;
             // 
             // RefreshButton
             // 
-            RefreshButton.Location = new Point(865, 278);
+            RefreshButton.Location = new Point(706, 429);
             RefreshButton.Margin = new Padding(3, 4, 3, 4);
             RefreshButton.Name = "RefreshButton";
             RefreshButton.Size = new Size(87, 26);
             RefreshButton.TabIndex = 56;
             RefreshButton.Text = "&Refresh";
             RefreshButton.UseVisualStyleBackColor = true;
+            RefreshButton.Click += RefreshButton_Click;
             // 
             // SaveButton
             // 
-            SaveButton.Location = new Point(770, 278);
+            SaveButton.Location = new Point(613, 429);
             SaveButton.Margin = new Padding(3, 4, 3, 4);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(87, 26);
             SaveButton.TabIndex = 55;
             SaveButton.Text = "&Save";
             SaveButton.UseVisualStyleBackColor = true;
+            SaveButton.Click += SaveButton_Click;
             // 
-            // ClientsLabel
+            // clientTitleLabel
             // 
-            ClientsLabel.AutoSize = true;
-            ClientsLabel.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ClientsLabel.Location = new Point(12, 10);
-            ClientsLabel.Margin = new Padding(3, 4, 3, 4);
-            ClientsLabel.Name = "ClientsLabel";
-            ClientsLabel.Size = new Size(113, 36);
-            ClientsLabel.TabIndex = 105;
-            ClientsLabel.Text = "Clients";
+            clientTitleLabel.AutoSize = true;
+            clientTitleLabel.Font = new Font("Microsoft Sans Serif", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            clientTitleLabel.Location = new Point(3, 4);
+            clientTitleLabel.Margin = new Padding(3, 4, 3, 4);
+            clientTitleLabel.Name = "clientTitleLabel";
+            clientTitleLabel.Size = new Size(113, 36);
+            clientTitleLabel.TabIndex = 105;
+            clientTitleLabel.Text = "Clients";
             // 
-            // SearchLabel
+            // searchLabel
             // 
-            SearchLabel.AutoSize = true;
-            SearchLabel.Location = new Point(39, 57);
-            SearchLabel.Margin = new Padding(3, 4, 3, 4);
-            SearchLabel.Name = "SearchLabel";
-            SearchLabel.Size = new Size(45, 15);
-            SearchLabel.TabIndex = 103;
-            SearchLabel.Text = "Search:";
+            searchLabel.AutoSize = true;
+            searchLabel.Location = new Point(24, 50);
+            searchLabel.Margin = new Padding(3, 4, 3, 4);
+            searchLabel.Name = "searchLabel";
+            searchLabel.Size = new Size(45, 15);
+            searchLabel.TabIndex = 103;
+            searchLabel.Text = "Search:";
             // 
-            // WagesTipsOtherCompensationTextBox
+            // searchTextBox
             // 
-            WagesTipsOtherCompensationTextBox.BorderStyle = BorderStyle.FixedSingle;
-            WagesTipsOtherCompensationTextBox.Location = new Point(96, 55);
-            WagesTipsOtherCompensationTextBox.Margin = new Padding(3, 4, 3, 4);
-            WagesTipsOtherCompensationTextBox.Name = "WagesTipsOtherCompensationTextBox";
-            WagesTipsOtherCompensationTextBox.Size = new Size(254, 23);
-            WagesTipsOtherCompensationTextBox.TabIndex = 104;
+            searchTextBox.BorderStyle = BorderStyle.FixedSingle;
+            searchTextBox.Location = new Point(81, 48);
+            searchTextBox.Margin = new Padding(3, 4, 3, 4);
+            searchTextBox.Name = "searchTextBox";
+            searchTextBox.Size = new Size(254, 23);
+            searchTextBox.TabIndex = 104;
+            // 
+            // accountTypePanel
+            // 
+            accountTypePanel.Controls.Add(savingsRadioButton);
+            accountTypePanel.Controls.Add(checkingRadioButton);
+            accountTypePanel.Location = new Point(1032, 329);
+            accountTypePanel.Name = "accountTypePanel";
+            accountTypePanel.Size = new Size(93, 48);
+            accountTypePanel.TabIndex = 106;
+            // 
+            // ClientDataGridView
+            // 
+            ClientDataGridView.AllowUserToAddRows = false;
+            ClientDataGridView.AllowUserToDeleteRows = false;
+            ClientDataGridView.AllowUserToResizeRows = false;
+            ClientDataGridView.AutoGenerateColumns = false;
+            ClientDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCellsExceptHeader;
+            ClientDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ClientDataGridView.Columns.AddRange(new DataGridViewColumn[] { clientIdDataGridViewTextBoxColumn, firstNameDataGridViewTextBoxColumn, middleNameDataGridViewTextBoxColumn, lastNameDataGridViewTextBoxColumn, suffixDataGridViewTextBoxColumn, ssnDataGridViewTextBoxColumn, birthDateDataGridViewTextBoxColumn, homePhoneDataGridViewTextBoxColumn, mobilePhoneDataGridViewTextBoxColumn, emailDataGridViewTextBoxColumn, addressLine1DataGridViewTextBoxColumn, addressLine2DataGridViewTextBoxColumn, cityDataGridViewTextBoxColumn, stateDataGridViewTextBoxColumn, zipDataGridViewTextBoxColumn, occupationDataGridViewTextBoxColumn, routingNumberDataGridViewTextBoxColumn, accountNumberDataGridViewTextBoxColumn, checkingDataGridViewTextBoxColumn, savingsDataGridViewTextBoxColumn, userIdDataGridViewTextBoxColumn });
+            ClientDataGridView.DataSource = clientBindingSource;
+            ClientDataGridView.Location = new Point(3, 85);
+            ClientDataGridView.Name = "ClientDataGridView";
+            ClientDataGridView.Size = new Size(1217, 150);
+            ClientDataGridView.TabIndex = 107;
+            ClientDataGridView.CellClick += ClientDataGridView_CellClick;
+            // 
+            // clientIdDataGridViewTextBoxColumn
+            // 
+            clientIdDataGridViewTextBoxColumn.DataPropertyName = "ClientId";
+            clientIdDataGridViewTextBoxColumn.HeaderText = "ClientId";
+            clientIdDataGridViewTextBoxColumn.Name = "clientIdDataGridViewTextBoxColumn";
+            clientIdDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // firstNameDataGridViewTextBoxColumn
+            // 
+            firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            firstNameDataGridViewTextBoxColumn.HeaderText = "FirstName";
+            firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            firstNameDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // middleNameDataGridViewTextBoxColumn
+            // 
+            middleNameDataGridViewTextBoxColumn.DataPropertyName = "MiddleName";
+            middleNameDataGridViewTextBoxColumn.HeaderText = "MiddleName";
+            middleNameDataGridViewTextBoxColumn.Name = "middleNameDataGridViewTextBoxColumn";
+            middleNameDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // lastNameDataGridViewTextBoxColumn
+            // 
+            lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            lastNameDataGridViewTextBoxColumn.HeaderText = "LastName";
+            lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            lastNameDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // suffixDataGridViewTextBoxColumn
+            // 
+            suffixDataGridViewTextBoxColumn.DataPropertyName = "Suffix";
+            suffixDataGridViewTextBoxColumn.HeaderText = "Suffix";
+            suffixDataGridViewTextBoxColumn.Name = "suffixDataGridViewTextBoxColumn";
+            suffixDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // ssnDataGridViewTextBoxColumn
+            // 
+            ssnDataGridViewTextBoxColumn.DataPropertyName = "Ssn";
+            ssnDataGridViewTextBoxColumn.HeaderText = "Ssn";
+            ssnDataGridViewTextBoxColumn.Name = "ssnDataGridViewTextBoxColumn";
+            ssnDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // birthDateDataGridViewTextBoxColumn
+            // 
+            birthDateDataGridViewTextBoxColumn.DataPropertyName = "BirthDate";
+            birthDateDataGridViewTextBoxColumn.HeaderText = "BirthDate";
+            birthDateDataGridViewTextBoxColumn.Name = "birthDateDataGridViewTextBoxColumn";
+            birthDateDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // homePhoneDataGridViewTextBoxColumn
+            // 
+            homePhoneDataGridViewTextBoxColumn.DataPropertyName = "HomePhone";
+            homePhoneDataGridViewTextBoxColumn.HeaderText = "HomePhone";
+            homePhoneDataGridViewTextBoxColumn.Name = "homePhoneDataGridViewTextBoxColumn";
+            homePhoneDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // mobilePhoneDataGridViewTextBoxColumn
+            // 
+            mobilePhoneDataGridViewTextBoxColumn.DataPropertyName = "MobilePhone";
+            mobilePhoneDataGridViewTextBoxColumn.HeaderText = "MobilePhone";
+            mobilePhoneDataGridViewTextBoxColumn.Name = "mobilePhoneDataGridViewTextBoxColumn";
+            mobilePhoneDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            emailDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // addressLine1DataGridViewTextBoxColumn
+            // 
+            addressLine1DataGridViewTextBoxColumn.DataPropertyName = "AddressLine1";
+            addressLine1DataGridViewTextBoxColumn.HeaderText = "AddressLine1";
+            addressLine1DataGridViewTextBoxColumn.Name = "addressLine1DataGridViewTextBoxColumn";
+            addressLine1DataGridViewTextBoxColumn.Width = 5;
+            // 
+            // addressLine2DataGridViewTextBoxColumn
+            // 
+            addressLine2DataGridViewTextBoxColumn.DataPropertyName = "AddressLine2";
+            addressLine2DataGridViewTextBoxColumn.HeaderText = "AddressLine2";
+            addressLine2DataGridViewTextBoxColumn.Name = "addressLine2DataGridViewTextBoxColumn";
+            addressLine2DataGridViewTextBoxColumn.Width = 5;
+            // 
+            // cityDataGridViewTextBoxColumn
+            // 
+            cityDataGridViewTextBoxColumn.DataPropertyName = "City";
+            cityDataGridViewTextBoxColumn.HeaderText = "City";
+            cityDataGridViewTextBoxColumn.Name = "cityDataGridViewTextBoxColumn";
+            cityDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // stateDataGridViewTextBoxColumn
+            // 
+            stateDataGridViewTextBoxColumn.DataPropertyName = "State";
+            stateDataGridViewTextBoxColumn.HeaderText = "State";
+            stateDataGridViewTextBoxColumn.Name = "stateDataGridViewTextBoxColumn";
+            stateDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // zipDataGridViewTextBoxColumn
+            // 
+            zipDataGridViewTextBoxColumn.DataPropertyName = "Zip";
+            zipDataGridViewTextBoxColumn.HeaderText = "Zip";
+            zipDataGridViewTextBoxColumn.Name = "zipDataGridViewTextBoxColumn";
+            zipDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // occupationDataGridViewTextBoxColumn
+            // 
+            occupationDataGridViewTextBoxColumn.DataPropertyName = "Occupation";
+            occupationDataGridViewTextBoxColumn.HeaderText = "Occupation";
+            occupationDataGridViewTextBoxColumn.Name = "occupationDataGridViewTextBoxColumn";
+            occupationDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // routingNumberDataGridViewTextBoxColumn
+            // 
+            routingNumberDataGridViewTextBoxColumn.DataPropertyName = "RoutingNumber";
+            routingNumberDataGridViewTextBoxColumn.HeaderText = "RoutingNumber";
+            routingNumberDataGridViewTextBoxColumn.Name = "routingNumberDataGridViewTextBoxColumn";
+            routingNumberDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // accountNumberDataGridViewTextBoxColumn
+            // 
+            accountNumberDataGridViewTextBoxColumn.DataPropertyName = "AccountNumber";
+            accountNumberDataGridViewTextBoxColumn.HeaderText = "AccountNumber";
+            accountNumberDataGridViewTextBoxColumn.Name = "accountNumberDataGridViewTextBoxColumn";
+            accountNumberDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // checkingDataGridViewTextBoxColumn
+            // 
+            checkingDataGridViewTextBoxColumn.DataPropertyName = "Checking";
+            checkingDataGridViewTextBoxColumn.HeaderText = "Checking";
+            checkingDataGridViewTextBoxColumn.Name = "checkingDataGridViewTextBoxColumn";
+            checkingDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // savingsDataGridViewTextBoxColumn
+            // 
+            savingsDataGridViewTextBoxColumn.DataPropertyName = "Savings";
+            savingsDataGridViewTextBoxColumn.HeaderText = "Savings";
+            savingsDataGridViewTextBoxColumn.Name = "savingsDataGridViewTextBoxColumn";
+            savingsDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // userIdDataGridViewTextBoxColumn
+            // 
+            userIdDataGridViewTextBoxColumn.DataPropertyName = "UserId";
+            userIdDataGridViewTextBoxColumn.HeaderText = "UserId";
+            userIdDataGridViewTextBoxColumn.Name = "userIdDataGridViewTextBoxColumn";
+            userIdDataGridViewTextBoxColumn.Width = 5;
+            // 
+            // clientBindingSource
+            // 
+            clientBindingSource.DataSource = typeof(Models.DataLayer.Client);
+            // 
+            // TaxFormsButton
+            // 
+            TaxFormsButton.Location = new Point(973, 429);
+            TaxFormsButton.Margin = new Padding(3, 4, 3, 4);
+            TaxFormsButton.Name = "TaxFormsButton";
+            TaxFormsButton.Size = new Size(115, 26);
+            TaxFormsButton.TabIndex = 108;
+            TaxFormsButton.Text = "&Access Tax Forms";
+            TaxFormsButton.UseVisualStyleBackColor = true;
+            TaxFormsButton.Click += TaxFormsButton_Click;
             // 
             // ClientControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(ClientsLabel);
-            Controls.Add(SearchLabel);
-            Controls.Add(WagesTipsOtherCompensationTextBox);
-            Controls.Add(savingsRadioButton);
-            Controls.Add(checkingRadioButton);
+            Controls.Add(TaxFormsButton);
+            Controls.Add(ClientDataGridView);
+            Controls.Add(accountTypePanel);
+            Controls.Add(clientTitleLabel);
+            Controls.Add(searchLabel);
+            Controls.Add(searchTextBox);
             Controls.Add(client_idLabel);
             Controls.Add(client_idTextBox);
             Controls.Add(first_nameLabel);
@@ -601,18 +780,18 @@
             Controls.Add(routing_numberTextBox);
             Controls.Add(account_numberLabel);
             Controls.Add(account_numberTextBox);
-            Controls.Add(checkingLabel);
-            Controls.Add(savingsLabel);
             Controls.Add(user_idLabel);
             Controls.Add(user_idTextBox);
             Controls.Add(DeleteButton);
-            Controls.Add(UpdateButton);
-            Controls.Add(ReadButton);
-            Controls.Add(CreateButton);
+            Controls.Add(CreateNewButton);
             Controls.Add(RefreshButton);
             Controls.Add(SaveButton);
             Name = "ClientControl";
-            Size = new Size(1223, 325);
+            Size = new Size(1223, 459);
+            accountTypePanel.ResumeLayout(false);
+            accountTypePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ClientDataGridView).EndInit();
+            ((System.ComponentModel.ISupportInitialize)clientBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -657,18 +836,41 @@
         private TextBox routing_numberTextBox;
         private Label account_numberLabel;
         private TextBox account_numberTextBox;
-        private Label checkingLabel;
-        private Label savingsLabel;
         private Label user_idLabel;
         private TextBox user_idTextBox;
         private Button DeleteButton;
         private Button UpdateButton;
         private Button ReadButton;
-        private Button CreateButton;
+        private Button CreateNewButton;
         private Button RefreshButton;
         private Button SaveButton;
-        private Label ClientsLabel;
-        private Label SearchLabel;
-        private TextBox WagesTipsOtherCompensationTextBox;
+        private Label clientTitleLabel;
+        private Label searchLabel;
+        private TextBox searchTextBox;
+        private Panel accountTypePanel;
+        private DataGridView ClientDataGridView;
+        private BindingSource clientBindingSource;
+        private DataGridViewTextBoxColumn clientIdDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn middleNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn suffixDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn ssnDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn birthDateDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn homePhoneDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn mobilePhoneDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn addressLine1DataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn addressLine2DataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn cityDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn stateDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn zipDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn occupationDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn routingNumberDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn accountNumberDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn checkingDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn savingsDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
+        private Button TaxFormsButton;
     }
 }

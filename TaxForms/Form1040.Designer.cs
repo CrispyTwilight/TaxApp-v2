@@ -321,13 +321,13 @@ namespace TaxApp_v2.TaxForms
             // 
             // GenerateBTN
             // 
-            GenerateBTN.Anchor = AnchorStyles.None;
             GenerateBTN.FlatStyle = FlatStyle.Flat;
-            GenerateBTN.Location = new Point(917, 952);
+            GenerateBTN.Location = new Point(822, 985);
             GenerateBTN.Margin = new Padding(4, 3, 4, 3);
             GenerateBTN.Name = "GenerateBTN";
             GenerateBTN.Size = new Size(88, 27);
             GenerateBTN.TabIndex = 51;
+            GenerateBTN.Text = "Generate";
             GenerateBTN.UseVisualStyleBackColor = true;
             GenerateBTN.Click += GenerateBTN_Click;
             // 
@@ -1137,7 +1137,7 @@ namespace TaxApp_v2.TaxForms
             Controls.Add(GenerateBTN);
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form1040";
-            Size = new Size(2108, 1168);
+            Size = new Size(918, 1022);
             Load += Form1040_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();

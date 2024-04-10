@@ -170,7 +170,7 @@
             // 
             EmployeesAddressAndZipCodeLabel.AutoSize = true;
             EmployeesAddressAndZipCodeLabel.Location = new Point(4, 474);
-            EmployeesAddressAndZipCodeLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployeesAddressAndZipCodeLabel.Margin = new Padding(4);
             EmployeesAddressAndZipCodeLabel.Name = "EmployeesAddressAndZipCodeLabel";
             EmployeesAddressAndZipCodeLabel.Size = new Size(189, 15);
             EmployeesAddressAndZipCodeLabel.TabIndex = 8;
@@ -181,7 +181,7 @@
             EmployeesAddressAndZipCodeTextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployeesAddressAndZipCodeTextBox.Dock = DockStyle.Fill;
             EmployeesAddressAndZipCodeTextBox.Location = new Point(4, 322);
-            EmployeesAddressAndZipCodeTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployeesAddressAndZipCodeTextBox.Margin = new Padding(4);
             EmployeesAddressAndZipCodeTextBox.Multiline = true;
             EmployeesAddressAndZipCodeTextBox.Name = "EmployeesAddressAndZipCodeTextBox";
             EmployeesAddressAndZipCodeTextBox.Size = new Size(595, 144);
@@ -220,20 +220,20 @@
             BottomSectionTableLayoutPanel.Controls.Add(LocalityNameLabel, 6, 0);
             BottomSectionTableLayoutPanel.Dock = DockStyle.Fill;
             BottomSectionTableLayoutPanel.Location = new Point(4, 4);
-            BottomSectionTableLayoutPanel.Margin = new Padding(4, 4, 4, 4);
+            BottomSectionTableLayoutPanel.Margin = new Padding(4);
             BottomSectionTableLayoutPanel.Name = "BottomSectionTableLayoutPanel";
             BottomSectionTableLayoutPanel.RowCount = 3;
             BottomSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
             BottomSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
             BottomSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
-            BottomSectionTableLayoutPanel.Size = new Size(1141, 80);
+            BottomSectionTableLayoutPanel.Size = new Size(1141, 77);
             BottomSectionTableLayoutPanel.TabIndex = 0;
             // 
             // StateLabel
             // 
             StateLabel.AutoSize = true;
             StateLabel.Location = new Point(4, 4);
-            StateLabel.Margin = new Padding(4, 4, 4, 4);
+            StateLabel.Margin = new Padding(4);
             StateLabel.Name = "StateLabel";
             StateLabel.Size = new Size(48, 15);
             StateLabel.TabIndex = 0;
@@ -244,7 +244,7 @@
             StateRow1TextBox.BorderStyle = BorderStyle.FixedSingle;
             StateRow1TextBox.Dock = DockStyle.Fill;
             StateRow1TextBox.Location = new Point(4, 27);
-            StateRow1TextBox.Margin = new Padding(4, 4, 4, 4);
+            StateRow1TextBox.Margin = new Padding(4);
             StateRow1TextBox.Name = "StateRow1TextBox";
             StateRow1TextBox.Size = new Size(66, 23);
             StateRow1TextBox.TabIndex = 7;
@@ -254,7 +254,7 @@
             StateRow2TextBox.BorderStyle = BorderStyle.FixedSingle;
             StateRow2TextBox.Dock = DockStyle.Fill;
             StateRow2TextBox.Location = new Point(4, 58);
-            StateRow2TextBox.Margin = new Padding(4, 4, 4, 4);
+            StateRow2TextBox.Margin = new Padding(4);
             StateRow2TextBox.Name = "StateRow2TextBox";
             StateRow2TextBox.Size = new Size(66, 23);
             StateRow2TextBox.TabIndex = 14;
@@ -263,7 +263,7 @@
             // 
             EmployersStateIdNumberLabel.AutoSize = true;
             EmployersStateIdNumberLabel.Location = new Point(78, 4);
-            EmployersStateIdNumberLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployersStateIdNumberLabel.Margin = new Padding(4);
             EmployersStateIdNumberLabel.Name = "EmployersStateIdNumberLabel";
             EmployersStateIdNumberLabel.Size = new Size(155, 15);
             EmployersStateIdNumberLabel.TabIndex = 1;
@@ -274,7 +274,7 @@
             EmployersStateIdNumberRow1TextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployersStateIdNumberRow1TextBox.Dock = DockStyle.Fill;
             EmployersStateIdNumberRow1TextBox.Location = new Point(78, 27);
-            EmployersStateIdNumberRow1TextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployersStateIdNumberRow1TextBox.Margin = new Padding(4);
             EmployersStateIdNumberRow1TextBox.Name = "EmployersStateIdNumberRow1TextBox";
             EmployersStateIdNumberRow1TextBox.Size = new Size(169, 23);
             EmployersStateIdNumberRow1TextBox.TabIndex = 8;
@@ -284,7 +284,7 @@
             EmployersStateIdNumberRow2TextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployersStateIdNumberRow2TextBox.Dock = DockStyle.Fill;
             EmployersStateIdNumberRow2TextBox.Location = new Point(78, 58);
-            EmployersStateIdNumberRow2TextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployersStateIdNumberRow2TextBox.Margin = new Padding(4);
             EmployersStateIdNumberRow2TextBox.Name = "EmployersStateIdNumberRow2TextBox";
             EmployersStateIdNumberRow2TextBox.Size = new Size(169, 23);
             EmployersStateIdNumberRow2TextBox.TabIndex = 15;
@@ -293,7 +293,7 @@
             // 
             StateWagesTipsEtcLabel.AutoSize = true;
             StateWagesTipsEtcLabel.Location = new Point(255, 4);
-            StateWagesTipsEtcLabel.Margin = new Padding(4, 4, 4, 4);
+            StateWagesTipsEtcLabel.Margin = new Padding(4);
             StateWagesTipsEtcLabel.Name = "StateWagesTipsEtcLabel";
             StateWagesTipsEtcLabel.Size = new Size(134, 15);
             StateWagesTipsEtcLabel.TabIndex = 2;
@@ -304,7 +304,7 @@
             StateWagesTipsEtcRow1TextBox.BorderStyle = BorderStyle.FixedSingle;
             StateWagesTipsEtcRow1TextBox.Dock = DockStyle.Fill;
             StateWagesTipsEtcRow1TextBox.Location = new Point(255, 27);
-            StateWagesTipsEtcRow1TextBox.Margin = new Padding(4, 4, 4, 4);
+            StateWagesTipsEtcRow1TextBox.Margin = new Padding(4);
             StateWagesTipsEtcRow1TextBox.Name = "StateWagesTipsEtcRow1TextBox";
             StateWagesTipsEtcRow1TextBox.Size = new Size(169, 23);
             StateWagesTipsEtcRow1TextBox.TabIndex = 9;
@@ -314,7 +314,7 @@
             StateWagesTipsEtcRow2TextBox.BorderStyle = BorderStyle.FixedSingle;
             StateWagesTipsEtcRow2TextBox.Dock = DockStyle.Fill;
             StateWagesTipsEtcRow2TextBox.Location = new Point(255, 58);
-            StateWagesTipsEtcRow2TextBox.Margin = new Padding(4, 4, 4, 4);
+            StateWagesTipsEtcRow2TextBox.Margin = new Padding(4);
             StateWagesTipsEtcRow2TextBox.Name = "StateWagesTipsEtcRow2TextBox";
             StateWagesTipsEtcRow2TextBox.Size = new Size(169, 23);
             StateWagesTipsEtcRow2TextBox.TabIndex = 16;
@@ -323,7 +323,7 @@
             // 
             StateIncomeTaxLabel.AutoSize = true;
             StateIncomeTaxLabel.Location = new Point(432, 4);
-            StateIncomeTaxLabel.Margin = new Padding(4, 4, 4, 4);
+            StateIncomeTaxLabel.Margin = new Padding(4);
             StateIncomeTaxLabel.Name = "StateIncomeTaxLabel";
             StateIncomeTaxLabel.Size = new Size(110, 15);
             StateIncomeTaxLabel.TabIndex = 3;
@@ -334,7 +334,7 @@
             StateIncomeTaxRow1TextBox.BorderStyle = BorderStyle.FixedSingle;
             StateIncomeTaxRow1TextBox.Dock = DockStyle.Fill;
             StateIncomeTaxRow1TextBox.Location = new Point(432, 27);
-            StateIncomeTaxRow1TextBox.Margin = new Padding(4, 4, 4, 4);
+            StateIncomeTaxRow1TextBox.Margin = new Padding(4);
             StateIncomeTaxRow1TextBox.Name = "StateIncomeTaxRow1TextBox";
             StateIncomeTaxRow1TextBox.Size = new Size(169, 23);
             StateIncomeTaxRow1TextBox.TabIndex = 10;
@@ -344,7 +344,7 @@
             StateIncomeTaxRow2TextBox.BorderStyle = BorderStyle.FixedSingle;
             StateIncomeTaxRow2TextBox.Dock = DockStyle.Fill;
             StateIncomeTaxRow2TextBox.Location = new Point(432, 58);
-            StateIncomeTaxRow2TextBox.Margin = new Padding(4, 4, 4, 4);
+            StateIncomeTaxRow2TextBox.Margin = new Padding(4);
             StateIncomeTaxRow2TextBox.Name = "StateIncomeTaxRow2TextBox";
             StateIncomeTaxRow2TextBox.Size = new Size(169, 23);
             StateIncomeTaxRow2TextBox.TabIndex = 17;
@@ -353,7 +353,7 @@
             // 
             LocalWagesTipsEtcLabel.AutoSize = true;
             LocalWagesTipsEtcLabel.Location = new Point(609, 4);
-            LocalWagesTipsEtcLabel.Margin = new Padding(4, 4, 4, 4);
+            LocalWagesTipsEtcLabel.Margin = new Padding(4);
             LocalWagesTipsEtcLabel.Name = "LocalWagesTipsEtcLabel";
             LocalWagesTipsEtcLabel.Size = new Size(136, 15);
             LocalWagesTipsEtcLabel.TabIndex = 4;
@@ -364,7 +364,7 @@
             LocalWagesTipsEtcRow1TextBox.BorderStyle = BorderStyle.FixedSingle;
             LocalWagesTipsEtcRow1TextBox.Dock = DockStyle.Fill;
             LocalWagesTipsEtcRow1TextBox.Location = new Point(609, 27);
-            LocalWagesTipsEtcRow1TextBox.Margin = new Padding(4, 4, 4, 4);
+            LocalWagesTipsEtcRow1TextBox.Margin = new Padding(4);
             LocalWagesTipsEtcRow1TextBox.Name = "LocalWagesTipsEtcRow1TextBox";
             LocalWagesTipsEtcRow1TextBox.Size = new Size(169, 23);
             LocalWagesTipsEtcRow1TextBox.TabIndex = 11;
@@ -374,7 +374,7 @@
             LocalWagesTipsEtcRow2TextBox.BorderStyle = BorderStyle.FixedSingle;
             LocalWagesTipsEtcRow2TextBox.Dock = DockStyle.Fill;
             LocalWagesTipsEtcRow2TextBox.Location = new Point(609, 58);
-            LocalWagesTipsEtcRow2TextBox.Margin = new Padding(4, 4, 4, 4);
+            LocalWagesTipsEtcRow2TextBox.Margin = new Padding(4);
             LocalWagesTipsEtcRow2TextBox.Name = "LocalWagesTipsEtcRow2TextBox";
             LocalWagesTipsEtcRow2TextBox.Size = new Size(169, 23);
             LocalWagesTipsEtcRow2TextBox.TabIndex = 18;
@@ -383,7 +383,7 @@
             // 
             LocalIncomeTaxLabel.AutoSize = true;
             LocalIncomeTaxLabel.Location = new Point(786, 4);
-            LocalIncomeTaxLabel.Margin = new Padding(4, 4, 4, 4);
+            LocalIncomeTaxLabel.Margin = new Padding(4);
             LocalIncomeTaxLabel.Name = "LocalIncomeTaxLabel";
             LocalIncomeTaxLabel.Size = new Size(112, 15);
             LocalIncomeTaxLabel.TabIndex = 5;
@@ -394,7 +394,7 @@
             LocalIncomeTaxRow1TextBox.BorderStyle = BorderStyle.FixedSingle;
             LocalIncomeTaxRow1TextBox.Dock = DockStyle.Fill;
             LocalIncomeTaxRow1TextBox.Location = new Point(786, 27);
-            LocalIncomeTaxRow1TextBox.Margin = new Padding(4, 4, 4, 4);
+            LocalIncomeTaxRow1TextBox.Margin = new Padding(4);
             LocalIncomeTaxRow1TextBox.Name = "LocalIncomeTaxRow1TextBox";
             LocalIncomeTaxRow1TextBox.Size = new Size(169, 23);
             LocalIncomeTaxRow1TextBox.TabIndex = 12;
@@ -404,7 +404,7 @@
             LocalIncomeTaxRow2TextBox.BorderStyle = BorderStyle.FixedSingle;
             LocalIncomeTaxRow2TextBox.Dock = DockStyle.Fill;
             LocalIncomeTaxRow2TextBox.Location = new Point(786, 58);
-            LocalIncomeTaxRow2TextBox.Margin = new Padding(4, 4, 4, 4);
+            LocalIncomeTaxRow2TextBox.Margin = new Padding(4);
             LocalIncomeTaxRow2TextBox.Name = "LocalIncomeTaxRow2TextBox";
             LocalIncomeTaxRow2TextBox.Size = new Size(169, 23);
             LocalIncomeTaxRow2TextBox.TabIndex = 19;
@@ -414,7 +414,7 @@
             LocalityNameRow2TextBox.BorderStyle = BorderStyle.FixedSingle;
             LocalityNameRow2TextBox.Dock = DockStyle.Fill;
             LocalityNameRow2TextBox.Location = new Point(963, 58);
-            LocalityNameRow2TextBox.Margin = new Padding(4, 4, 4, 4);
+            LocalityNameRow2TextBox.Margin = new Padding(4);
             LocalityNameRow2TextBox.Name = "LocalityNameRow2TextBox";
             LocalityNameRow2TextBox.Size = new Size(174, 23);
             LocalityNameRow2TextBox.TabIndex = 20;
@@ -424,7 +424,7 @@
             LocalityNameRow1TextBox.BorderStyle = BorderStyle.FixedSingle;
             LocalityNameRow1TextBox.Dock = DockStyle.Fill;
             LocalityNameRow1TextBox.Location = new Point(963, 27);
-            LocalityNameRow1TextBox.Margin = new Padding(4, 4, 4, 4);
+            LocalityNameRow1TextBox.Margin = new Padding(4);
             LocalityNameRow1TextBox.Name = "LocalityNameRow1TextBox";
             LocalityNameRow1TextBox.Size = new Size(174, 23);
             LocalityNameRow1TextBox.TabIndex = 13;
@@ -433,7 +433,7 @@
             // 
             LocalityNameLabel.AutoSize = true;
             LocalityNameLabel.Location = new Point(963, 4);
-            LocalityNameLabel.Margin = new Padding(4, 4, 4, 4);
+            LocalityNameLabel.Margin = new Padding(4);
             LocalityNameLabel.Name = "LocalityNameLabel";
             LocalityNameLabel.Size = new Size(96, 15);
             LocalityNameLabel.TabIndex = 6;
@@ -454,7 +454,7 @@
             LeftSectionTableLayoutPanel.Controls.Add(EmployeesAddressAndZipCodeLabel, 0, 8);
             LeftSectionTableLayoutPanel.Dock = DockStyle.Fill;
             LeftSectionTableLayoutPanel.Location = new Point(4, 4);
-            LeftSectionTableLayoutPanel.Margin = new Padding(4, 4, 4, 4);
+            LeftSectionTableLayoutPanel.Margin = new Padding(4);
             LeftSectionTableLayoutPanel.Name = "LeftSectionTableLayoutPanel";
             LeftSectionTableLayoutPanel.RowCount = 9;
             LeftSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
@@ -466,14 +466,14 @@
             LeftSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
             LeftSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
             LeftSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
-            LeftSectionTableLayoutPanel.Size = new Size(603, 483);
+            LeftSectionTableLayoutPanel.Size = new Size(603, 486);
             LeftSectionTableLayoutPanel.TabIndex = 0;
             // 
             // EmployerIdentificationNumberLabel
             // 
             EmployerIdentificationNumberLabel.AutoSize = true;
             EmployerIdentificationNumberLabel.Location = new Point(4, 4);
-            EmployerIdentificationNumberLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployerIdentificationNumberLabel.Margin = new Padding(4);
             EmployerIdentificationNumberLabel.Name = "EmployerIdentificationNumberLabel";
             EmployerIdentificationNumberLabel.Size = new Size(214, 15);
             EmployerIdentificationNumberLabel.TabIndex = 0;
@@ -484,7 +484,7 @@
             EmployerIdentificationNumberTextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployerIdentificationNumberTextBox.Dock = DockStyle.Fill;
             EmployerIdentificationNumberTextBox.Location = new Point(4, 27);
-            EmployerIdentificationNumberTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployerIdentificationNumberTextBox.Margin = new Padding(4);
             EmployerIdentificationNumberTextBox.Name = "EmployerIdentificationNumberTextBox";
             EmployerIdentificationNumberTextBox.Size = new Size(595, 23);
             EmployerIdentificationNumberTextBox.TabIndex = 1;
@@ -493,7 +493,7 @@
             // 
             EmployersNameAddressAndZipCodeLabel.AutoSize = true;
             EmployersNameAddressAndZipCodeLabel.Location = new Point(4, 58);
-            EmployersNameAddressAndZipCodeLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployersNameAddressAndZipCodeLabel.Margin = new Padding(4);
             EmployersNameAddressAndZipCodeLabel.Name = "EmployersNameAddressAndZipCodeLabel";
             EmployersNameAddressAndZipCodeLabel.Size = new Size(228, 15);
             EmployersNameAddressAndZipCodeLabel.TabIndex = 2;
@@ -504,7 +504,7 @@
             EmployersNameAddressAndZipCodeTextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployersNameAddressAndZipCodeTextBox.Dock = DockStyle.Fill;
             EmployersNameAddressAndZipCodeTextBox.Location = new Point(4, 81);
-            EmployersNameAddressAndZipCodeTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployersNameAddressAndZipCodeTextBox.Margin = new Padding(4);
             EmployersNameAddressAndZipCodeTextBox.Multiline = true;
             EmployersNameAddressAndZipCodeTextBox.Name = "EmployersNameAddressAndZipCodeTextBox";
             EmployersNameAddressAndZipCodeTextBox.Size = new Size(595, 127);
@@ -514,7 +514,7 @@
             // 
             ControlNumberLabel.AutoSize = true;
             ControlNumberLabel.Location = new Point(4, 216);
-            ControlNumberLabel.Margin = new Padding(4, 4, 4, 4);
+            ControlNumberLabel.Margin = new Padding(4);
             ControlNumberLabel.Name = "ControlNumberLabel";
             ControlNumberLabel.Size = new Size(102, 15);
             ControlNumberLabel.TabIndex = 4;
@@ -525,7 +525,7 @@
             ControlNumberTextBox.BorderStyle = BorderStyle.FixedSingle;
             ControlNumberTextBox.Dock = DockStyle.Fill;
             ControlNumberTextBox.Location = new Point(4, 239);
-            ControlNumberTextBox.Margin = new Padding(4, 4, 4, 4);
+            ControlNumberTextBox.Margin = new Padding(4);
             ControlNumberTextBox.Name = "ControlNumberTextBox";
             ControlNumberTextBox.Size = new Size(595, 23);
             ControlNumberTextBox.TabIndex = 5;
@@ -556,7 +556,7 @@
             // 
             EmployeesFirstNameAndInitialLabel.AutoSize = true;
             EmployeesFirstNameAndInitialLabel.Location = new Point(4, 4);
-            EmployeesFirstNameAndInitialLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployeesFirstNameAndInitialLabel.Margin = new Padding(4);
             EmployeesFirstNameAndInitialLabel.Name = "EmployeesFirstNameAndInitialLabel";
             EmployeesFirstNameAndInitialLabel.Size = new Size(187, 15);
             EmployeesFirstNameAndInitialLabel.TabIndex = 0;
@@ -567,7 +567,7 @@
             EmployeesFirstNameAndInitialTextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployeesFirstNameAndInitialTextBox.Dock = DockStyle.Fill;
             EmployeesFirstNameAndInitialTextBox.Location = new Point(275, 27);
-            EmployeesFirstNameAndInitialTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployeesFirstNameAndInitialTextBox.Margin = new Padding(4);
             EmployeesFirstNameAndInitialTextBox.Name = "EmployeesFirstNameAndInitialTextBox";
             EmployeesFirstNameAndInitialTextBox.Size = new Size(263, 23);
             EmployeesFirstNameAndInitialTextBox.TabIndex = 3;
@@ -576,7 +576,7 @@
             // 
             EmployeesLastNameLabel.AutoSize = true;
             EmployeesLastNameLabel.Location = new Point(275, 4);
-            EmployeesLastNameLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployeesLastNameLabel.Margin = new Padding(4);
             EmployeesLastNameLabel.Name = "EmployeesLastNameLabel";
             EmployeesLastNameLabel.Size = new Size(61, 15);
             EmployeesLastNameLabel.TabIndex = 2;
@@ -587,7 +587,7 @@
             EmployeesLastNameTextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployeesLastNameTextBox.Dock = DockStyle.Fill;
             EmployeesLastNameTextBox.Location = new Point(4, 27);
-            EmployeesLastNameTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployeesLastNameTextBox.Margin = new Padding(4);
             EmployeesLastNameTextBox.Name = "EmployeesLastNameTextBox";
             EmployeesLastNameTextBox.Size = new Size(263, 23);
             EmployeesLastNameTextBox.TabIndex = 1;
@@ -596,7 +596,7 @@
             // 
             EmployeesSuffixLabel.AutoSize = true;
             EmployeesSuffixLabel.Location = new Point(546, 4);
-            EmployeesSuffixLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployeesSuffixLabel.Margin = new Padding(4);
             EmployeesSuffixLabel.Name = "EmployeesSuffixLabel";
             EmployeesSuffixLabel.Size = new Size(31, 15);
             EmployeesSuffixLabel.TabIndex = 4;
@@ -607,7 +607,7 @@
             EmployeesSuffixTextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployeesSuffixTextBox.Dock = DockStyle.Fill;
             EmployeesSuffixTextBox.Location = new Point(546, 27);
-            EmployeesSuffixTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployeesSuffixTextBox.Margin = new Padding(4);
             EmployeesSuffixTextBox.Name = "EmployeesSuffixTextBox";
             EmployeesSuffixTextBox.Size = new Size(53, 23);
             EmployeesSuffixTextBox.TabIndex = 5;
@@ -624,7 +624,7 @@
             TopSectionTableLayoutPanel.Controls.Add(OmbNoLabel, 2, 1);
             TopSectionTableLayoutPanel.Dock = DockStyle.Fill;
             TopSectionTableLayoutPanel.Location = new Point(4, 4);
-            TopSectionTableLayoutPanel.Margin = new Padding(4, 4, 4, 4);
+            TopSectionTableLayoutPanel.Margin = new Padding(4);
             TopSectionTableLayoutPanel.Name = "TopSectionTableLayoutPanel";
             TopSectionTableLayoutPanel.RowCount = 2;
             TopSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
@@ -638,7 +638,7 @@
             Number2222Label.Dock = DockStyle.Fill;
             Number2222Label.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Number2222Label.Location = new Point(4, 4);
-            Number2222Label.Margin = new Padding(4, 4, 4, 4);
+            Number2222Label.Margin = new Padding(4);
             Number2222Label.Name = "Number2222Label";
             TopSectionTableLayoutPanel.SetRowSpan(Number2222Label, 2);
             Number2222Label.Size = new Size(172, 46);
@@ -651,7 +651,7 @@
             EmployeesSocialSecurityNumberLabel.AutoSize = true;
             EmployeesSocialSecurityNumberLabel.Dock = DockStyle.Fill;
             EmployeesSocialSecurityNumberLabel.Location = new Point(184, 4);
-            EmployeesSocialSecurityNumberLabel.Margin = new Padding(4, 4, 4, 4);
+            EmployeesSocialSecurityNumberLabel.Margin = new Padding(4);
             EmployeesSocialSecurityNumberLabel.Name = "EmployeesSocialSecurityNumberLabel";
             EmployeesSocialSecurityNumberLabel.Size = new Size(338, 15);
             EmployeesSocialSecurityNumberLabel.TabIndex = 1;
@@ -662,7 +662,7 @@
             EmployeesSocialSecurityNumberTextBox.BorderStyle = BorderStyle.FixedSingle;
             EmployeesSocialSecurityNumberTextBox.Dock = DockStyle.Fill;
             EmployeesSocialSecurityNumberTextBox.Location = new Point(184, 27);
-            EmployeesSocialSecurityNumberTextBox.Margin = new Padding(4, 4, 4, 4);
+            EmployeesSocialSecurityNumberTextBox.Margin = new Padding(4);
             EmployeesSocialSecurityNumberTextBox.Name = "EmployeesSocialSecurityNumberTextBox";
             EmployeesSocialSecurityNumberTextBox.Size = new Size(338, 23);
             EmployeesSocialSecurityNumberTextBox.TabIndex = 2;
@@ -672,7 +672,7 @@
             OmbNoLabel.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             OmbNoLabel.AutoSize = true;
             OmbNoLabel.Location = new Point(530, 35);
-            OmbNoLabel.Margin = new Padding(4, 4, 4, 4);
+            OmbNoLabel.Margin = new Padding(4);
             OmbNoLabel.Name = "OmbNoLabel";
             OmbNoLabel.Size = new Size(115, 15);
             OmbNoLabel.TabIndex = 3;
@@ -714,7 +714,7 @@
             RightSectionTableLayoutPanel.Controls.Add(Box12dTableLayoutPanel, 1, 14);
             RightSectionTableLayoutPanel.Dock = DockStyle.Fill;
             RightSectionTableLayoutPanel.Location = new Point(4, 4);
-            RightSectionTableLayoutPanel.Margin = new Padding(4, 4, 4, 4);
+            RightSectionTableLayoutPanel.Margin = new Padding(4);
             RightSectionTableLayoutPanel.Name = "RightSectionTableLayoutPanel";
             RightSectionTableLayoutPanel.RowCount = 15;
             RightSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
@@ -733,14 +733,14 @@
             RightSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
             RightSectionTableLayoutPanel.RowStyles.Add(new RowStyle());
             RightSectionTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
-            RightSectionTableLayoutPanel.Size = new Size(521, 483);
+            RightSectionTableLayoutPanel.Size = new Size(521, 486);
             RightSectionTableLayoutPanel.TabIndex = 0;
             // 
             // WagesTipsOtherCompensationLabel
             // 
             WagesTipsOtherCompensationLabel.AutoSize = true;
             WagesTipsOtherCompensationLabel.Location = new Point(4, 4);
-            WagesTipsOtherCompensationLabel.Margin = new Padding(4, 4, 4, 4);
+            WagesTipsOtherCompensationLabel.Margin = new Padding(4);
             WagesTipsOtherCompensationLabel.Name = "WagesTipsOtherCompensationLabel";
             WagesTipsOtherCompensationLabel.Size = new Size(189, 15);
             WagesTipsOtherCompensationLabel.TabIndex = 0;
@@ -751,7 +751,7 @@
             WagesTipsOtherCompensationTextBox.BorderStyle = BorderStyle.FixedSingle;
             WagesTipsOtherCompensationTextBox.Dock = DockStyle.Fill;
             WagesTipsOtherCompensationTextBox.Location = new Point(4, 27);
-            WagesTipsOtherCompensationTextBox.Margin = new Padding(4, 4, 4, 4);
+            WagesTipsOtherCompensationTextBox.Margin = new Padding(4);
             WagesTipsOtherCompensationTextBox.Name = "WagesTipsOtherCompensationTextBox";
             WagesTipsOtherCompensationTextBox.Size = new Size(252, 23);
             WagesTipsOtherCompensationTextBox.TabIndex = 1;
@@ -760,7 +760,7 @@
             // 
             FederalIncomeTaxWithheldLabel.AutoSize = true;
             FederalIncomeTaxWithheldLabel.Location = new Point(264, 4);
-            FederalIncomeTaxWithheldLabel.Margin = new Padding(4, 4, 4, 4);
+            FederalIncomeTaxWithheldLabel.Margin = new Padding(4);
             FederalIncomeTaxWithheldLabel.Name = "FederalIncomeTaxWithheldLabel";
             FederalIncomeTaxWithheldLabel.Size = new Size(165, 15);
             FederalIncomeTaxWithheldLabel.TabIndex = 2;
@@ -771,7 +771,7 @@
             FederalIncomeTaxWithheldTextBox.BorderStyle = BorderStyle.FixedSingle;
             FederalIncomeTaxWithheldTextBox.Dock = DockStyle.Fill;
             FederalIncomeTaxWithheldTextBox.Location = new Point(264, 27);
-            FederalIncomeTaxWithheldTextBox.Margin = new Padding(4, 4, 4, 4);
+            FederalIncomeTaxWithheldTextBox.Margin = new Padding(4);
             FederalIncomeTaxWithheldTextBox.Name = "FederalIncomeTaxWithheldTextBox";
             FederalIncomeTaxWithheldTextBox.Size = new Size(253, 23);
             FederalIncomeTaxWithheldTextBox.TabIndex = 3;
@@ -780,7 +780,7 @@
             // 
             SocialSecurityWagesLabel.AutoSize = true;
             SocialSecurityWagesLabel.Location = new Point(4, 58);
-            SocialSecurityWagesLabel.Margin = new Padding(4, 4, 4, 4);
+            SocialSecurityWagesLabel.Margin = new Padding(4);
             SocialSecurityWagesLabel.Name = "SocialSecurityWagesLabel";
             SocialSecurityWagesLabel.Size = new Size(127, 15);
             SocialSecurityWagesLabel.TabIndex = 4;
@@ -791,7 +791,7 @@
             SocialSecurityWagesTextBox.BorderStyle = BorderStyle.FixedSingle;
             SocialSecurityWagesTextBox.Dock = DockStyle.Fill;
             SocialSecurityWagesTextBox.Location = new Point(4, 81);
-            SocialSecurityWagesTextBox.Margin = new Padding(4, 4, 4, 4);
+            SocialSecurityWagesTextBox.Margin = new Padding(4);
             SocialSecurityWagesTextBox.Name = "SocialSecurityWagesTextBox";
             SocialSecurityWagesTextBox.Size = new Size(252, 23);
             SocialSecurityWagesTextBox.TabIndex = 5;
@@ -800,7 +800,7 @@
             // 
             SocialSecurityTaxWithheldLabel.AutoSize = true;
             SocialSecurityTaxWithheldLabel.Location = new Point(264, 58);
-            SocialSecurityTaxWithheldLabel.Margin = new Padding(4, 4, 4, 4);
+            SocialSecurityTaxWithheldLabel.Margin = new Padding(4);
             SocialSecurityTaxWithheldLabel.Name = "SocialSecurityTaxWithheldLabel";
             SocialSecurityTaxWithheldLabel.Size = new Size(159, 15);
             SocialSecurityTaxWithheldLabel.TabIndex = 6;
@@ -811,7 +811,7 @@
             SocialSecurityTaxWithheldTextBox.BorderStyle = BorderStyle.FixedSingle;
             SocialSecurityTaxWithheldTextBox.Dock = DockStyle.Fill;
             SocialSecurityTaxWithheldTextBox.Location = new Point(264, 81);
-            SocialSecurityTaxWithheldTextBox.Margin = new Padding(4, 4, 4, 4);
+            SocialSecurityTaxWithheldTextBox.Margin = new Padding(4);
             SocialSecurityTaxWithheldTextBox.Name = "SocialSecurityTaxWithheldTextBox";
             SocialSecurityTaxWithheldTextBox.Size = new Size(253, 23);
             SocialSecurityTaxWithheldTextBox.TabIndex = 7;
@@ -820,7 +820,7 @@
             // 
             MedicareWagesAndTipsLabel.AutoSize = true;
             MedicareWagesAndTipsLabel.Location = new Point(4, 112);
-            MedicareWagesAndTipsLabel.Margin = new Padding(4, 4, 4, 4);
+            MedicareWagesAndTipsLabel.Margin = new Padding(4);
             MedicareWagesAndTipsLabel.Name = "MedicareWagesAndTipsLabel";
             MedicareWagesAndTipsLabel.Size = new Size(146, 15);
             MedicareWagesAndTipsLabel.TabIndex = 8;
@@ -831,7 +831,7 @@
             MedicareWagesAndTipsTextBox.BorderStyle = BorderStyle.FixedSingle;
             MedicareWagesAndTipsTextBox.Dock = DockStyle.Fill;
             MedicareWagesAndTipsTextBox.Location = new Point(4, 135);
-            MedicareWagesAndTipsTextBox.Margin = new Padding(4, 4, 4, 4);
+            MedicareWagesAndTipsTextBox.Margin = new Padding(4);
             MedicareWagesAndTipsTextBox.Name = "MedicareWagesAndTipsTextBox";
             MedicareWagesAndTipsTextBox.Size = new Size(252, 23);
             MedicareWagesAndTipsTextBox.TabIndex = 9;
@@ -840,7 +840,7 @@
             // 
             MedicareTaxWithheldLabel.AutoSize = true;
             MedicareTaxWithheldLabel.Location = new Point(264, 112);
-            MedicareTaxWithheldLabel.Margin = new Padding(4, 4, 4, 4);
+            MedicareTaxWithheldLabel.Margin = new Padding(4);
             MedicareTaxWithheldLabel.Name = "MedicareTaxWithheldLabel";
             MedicareTaxWithheldLabel.Size = new Size(133, 15);
             MedicareTaxWithheldLabel.TabIndex = 10;
@@ -851,7 +851,7 @@
             MedicareTaxWithheldTextBox.BorderStyle = BorderStyle.FixedSingle;
             MedicareTaxWithheldTextBox.Dock = DockStyle.Fill;
             MedicareTaxWithheldTextBox.Location = new Point(264, 135);
-            MedicareTaxWithheldTextBox.Margin = new Padding(4, 4, 4, 4);
+            MedicareTaxWithheldTextBox.Margin = new Padding(4);
             MedicareTaxWithheldTextBox.Name = "MedicareTaxWithheldTextBox";
             MedicareTaxWithheldTextBox.Size = new Size(253, 23);
             MedicareTaxWithheldTextBox.TabIndex = 11;
@@ -860,7 +860,7 @@
             // 
             SocialSecurityTipsLabel.AutoSize = true;
             SocialSecurityTipsLabel.Location = new Point(4, 166);
-            SocialSecurityTipsLabel.Margin = new Padding(4, 4, 4, 4);
+            SocialSecurityTipsLabel.Margin = new Padding(4);
             SocialSecurityTipsLabel.Name = "SocialSecurityTipsLabel";
             SocialSecurityTipsLabel.Size = new Size(113, 15);
             SocialSecurityTipsLabel.TabIndex = 12;
@@ -871,7 +871,7 @@
             SocialSecurityTipsTextBox.BorderStyle = BorderStyle.FixedSingle;
             SocialSecurityTipsTextBox.Dock = DockStyle.Fill;
             SocialSecurityTipsTextBox.Location = new Point(4, 189);
-            SocialSecurityTipsTextBox.Margin = new Padding(4, 4, 4, 4);
+            SocialSecurityTipsTextBox.Margin = new Padding(4);
             SocialSecurityTipsTextBox.Name = "SocialSecurityTipsTextBox";
             SocialSecurityTipsTextBox.Size = new Size(252, 23);
             SocialSecurityTipsTextBox.TabIndex = 13;
@@ -880,7 +880,7 @@
             // 
             AllocatedTipsLabel.AutoSize = true;
             AllocatedTipsLabel.Location = new Point(264, 166);
-            AllocatedTipsLabel.Margin = new Padding(4, 4, 4, 4);
+            AllocatedTipsLabel.Margin = new Padding(4);
             AllocatedTipsLabel.Name = "AllocatedTipsLabel";
             AllocatedTipsLabel.Size = new Size(88, 15);
             AllocatedTipsLabel.TabIndex = 14;
@@ -891,7 +891,7 @@
             AllocatedTipsTextBox.BorderStyle = BorderStyle.FixedSingle;
             AllocatedTipsTextBox.Dock = DockStyle.Fill;
             AllocatedTipsTextBox.Location = new Point(264, 189);
-            AllocatedTipsTextBox.Margin = new Padding(4, 4, 4, 4);
+            AllocatedTipsTextBox.Margin = new Padding(4);
             AllocatedTipsTextBox.Name = "AllocatedTipsTextBox";
             AllocatedTipsTextBox.Size = new Size(253, 23);
             AllocatedTipsTextBox.TabIndex = 15;
@@ -900,7 +900,7 @@
             // 
             Box9Label.AutoSize = true;
             Box9Label.Location = new Point(4, 220);
-            Box9Label.Margin = new Padding(4, 4, 4, 4);
+            Box9Label.Margin = new Padding(4);
             Box9Label.Name = "Box9Label";
             Box9Label.Size = new Size(13, 15);
             Box9Label.TabIndex = 16;
@@ -911,7 +911,7 @@
             Box9TextBox.BorderStyle = BorderStyle.FixedSingle;
             Box9TextBox.Dock = DockStyle.Fill;
             Box9TextBox.Location = new Point(4, 243);
-            Box9TextBox.Margin = new Padding(4, 4, 4, 4);
+            Box9TextBox.Margin = new Padding(4);
             Box9TextBox.Name = "Box9TextBox";
             Box9TextBox.ReadOnly = true;
             Box9TextBox.Size = new Size(252, 23);
@@ -922,7 +922,7 @@
             // 
             DependentCareBenefitsLabel.AutoSize = true;
             DependentCareBenefitsLabel.Location = new Point(264, 220);
-            DependentCareBenefitsLabel.Margin = new Padding(4, 4, 4, 4);
+            DependentCareBenefitsLabel.Margin = new Padding(4);
             DependentCareBenefitsLabel.Name = "DependentCareBenefitsLabel";
             DependentCareBenefitsLabel.Size = new Size(150, 15);
             DependentCareBenefitsLabel.TabIndex = 18;
@@ -933,7 +933,7 @@
             DependentCareBenefitsTextBox.BorderStyle = BorderStyle.FixedSingle;
             DependentCareBenefitsTextBox.Dock = DockStyle.Fill;
             DependentCareBenefitsTextBox.Location = new Point(264, 243);
-            DependentCareBenefitsTextBox.Margin = new Padding(4, 4, 4, 4);
+            DependentCareBenefitsTextBox.Margin = new Padding(4);
             DependentCareBenefitsTextBox.Name = "DependentCareBenefitsTextBox";
             DependentCareBenefitsTextBox.Size = new Size(253, 23);
             DependentCareBenefitsTextBox.TabIndex = 19;
@@ -942,7 +942,7 @@
             // 
             NonqualifiedPlansLabel.AutoSize = true;
             NonqualifiedPlansLabel.Location = new Point(4, 274);
-            NonqualifiedPlansLabel.Margin = new Padding(4, 4, 4, 4);
+            NonqualifiedPlansLabel.Margin = new Padding(4);
             NonqualifiedPlansLabel.Name = "NonqualifiedPlansLabel";
             NonqualifiedPlansLabel.Size = new Size(122, 15);
             NonqualifiedPlansLabel.TabIndex = 20;
@@ -953,7 +953,7 @@
             NonqualifiedPlansTextBox.BorderStyle = BorderStyle.FixedSingle;
             NonqualifiedPlansTextBox.Dock = DockStyle.Fill;
             NonqualifiedPlansTextBox.Location = new Point(4, 297);
-            NonqualifiedPlansTextBox.Margin = new Padding(4, 4, 4, 4);
+            NonqualifiedPlansTextBox.Margin = new Padding(4);
             NonqualifiedPlansTextBox.Name = "NonqualifiedPlansTextBox";
             NonqualifiedPlansTextBox.Size = new Size(252, 23);
             NonqualifiedPlansTextBox.TabIndex = 21;
@@ -962,7 +962,7 @@
             // 
             Box12aLabel.AutoSize = true;
             Box12aLabel.Location = new Point(264, 274);
-            Box12aLabel.Margin = new Padding(4, 4, 4, 4);
+            Box12aLabel.Margin = new Padding(4);
             Box12aLabel.Name = "Box12aLabel";
             Box12aLabel.Size = new Size(167, 15);
             Box12aLabel.TabIndex = 23;
@@ -995,7 +995,7 @@
             Box12aCodeTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12aCodeTextBox.Dock = DockStyle.Fill;
             Box12aCodeTextBox.Location = new Point(4, 4);
-            Box12aCodeTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12aCodeTextBox.Margin = new Padding(4);
             Box12aCodeTextBox.Name = "Box12aCodeTextBox";
             Box12aCodeTextBox.Size = new Size(41, 23);
             Box12aCodeTextBox.TabIndex = 0;
@@ -1005,7 +1005,7 @@
             Box12aAmountTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12aAmountTextBox.Dock = DockStyle.Fill;
             Box12aAmountTextBox.Location = new Point(53, 4);
-            Box12aAmountTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12aAmountTextBox.Margin = new Padding(4);
             Box12aAmountTextBox.Name = "Box12aAmountTextBox";
             Box12aAmountTextBox.Size = new Size(204, 23);
             Box12aAmountTextBox.TabIndex = 1;
@@ -1037,7 +1037,7 @@
             // 
             Box12bLabel.AutoSize = true;
             Box12bLabel.Location = new Point(4, 4);
-            Box12bLabel.Margin = new Padding(4, 4, 4, 4);
+            Box12bLabel.Margin = new Padding(4);
             Box12bLabel.Name = "Box12bLabel";
             Box12bLabel.Size = new Size(26, 15);
             Box12bLabel.TabIndex = 0;
@@ -1048,7 +1048,7 @@
             Box12bCodeTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12bCodeTextBox.Dock = DockStyle.Fill;
             Box12bCodeTextBox.Location = new Point(4, 27);
-            Box12bCodeTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12bCodeTextBox.Margin = new Padding(4);
             Box12bCodeTextBox.Name = "Box12bCodeTextBox";
             Box12bCodeTextBox.Size = new Size(41, 23);
             Box12bCodeTextBox.TabIndex = 1;
@@ -1058,7 +1058,7 @@
             Box12bAmountTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12bAmountTextBox.Dock = DockStyle.Fill;
             Box12bAmountTextBox.Location = new Point(53, 27);
-            Box12bAmountTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12bAmountTextBox.Margin = new Padding(4);
             Box12bAmountTextBox.Name = "Box12bAmountTextBox";
             Box12bAmountTextBox.Size = new Size(204, 23);
             Box12bAmountTextBox.TabIndex = 2;
@@ -1090,7 +1090,7 @@
             // 
             Box12cLabel.AutoSize = true;
             Box12cLabel.Location = new Point(4, 4);
-            Box12cLabel.Margin = new Padding(4, 4, 4, 4);
+            Box12cLabel.Margin = new Padding(4);
             Box12cLabel.Name = "Box12cLabel";
             Box12cLabel.Size = new Size(25, 15);
             Box12cLabel.TabIndex = 0;
@@ -1101,7 +1101,7 @@
             Box12cCodeTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12cCodeTextBox.Dock = DockStyle.Fill;
             Box12cCodeTextBox.Location = new Point(4, 27);
-            Box12cCodeTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12cCodeTextBox.Margin = new Padding(4);
             Box12cCodeTextBox.Name = "Box12cCodeTextBox";
             Box12cCodeTextBox.Size = new Size(41, 23);
             Box12cCodeTextBox.TabIndex = 1;
@@ -1111,7 +1111,7 @@
             Box12cAmountTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12cAmountTextBox.Dock = DockStyle.Fill;
             Box12cAmountTextBox.Location = new Point(53, 27);
-            Box12cAmountTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12cAmountTextBox.Margin = new Padding(4);
             Box12cAmountTextBox.Name = "Box12cAmountTextBox";
             Box12cAmountTextBox.Size = new Size(204, 23);
             Box12cAmountTextBox.TabIndex = 2;
@@ -1122,7 +1122,6 @@
             OtherTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18.86792F));
             OtherTableLayoutPanel.Controls.Add(OtherLabel, 0, 0);
             OtherTableLayoutPanel.Controls.Add(OtherTextBox, 0, 1);
-            OtherTableLayoutPanel.Dock = DockStyle.Fill;
             OtherTableLayoutPanel.Location = new Point(0, 389);
             OtherTableLayoutPanel.Margin = new Padding(0);
             OtherTableLayoutPanel.Name = "OtherTableLayoutPanel";
@@ -1135,14 +1134,14 @@
             OtherTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
             OtherTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
             OtherTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 23F));
-            OtherTableLayoutPanel.Size = new Size(260, 189);
+            OtherTableLayoutPanel.Size = new Size(260, 94);
             OtherTableLayoutPanel.TabIndex = 26;
             // 
             // OtherLabel
             // 
             OtherLabel.AutoSize = true;
             OtherLabel.Location = new Point(4, 4);
-            OtherLabel.Margin = new Padding(4, 4, 4, 4);
+            OtherLabel.Margin = new Padding(4);
             OtherLabel.Name = "OtherLabel";
             OtherLabel.Size = new Size(52, 15);
             OtherLabel.TabIndex = 0;
@@ -1151,19 +1150,18 @@
             // OtherTextBox
             // 
             OtherTextBox.BorderStyle = BorderStyle.FixedSingle;
-            OtherTextBox.Dock = DockStyle.Fill;
             OtherTextBox.Location = new Point(4, 27);
-            OtherTextBox.Margin = new Padding(4, 4, 4, 4);
+            OtherTextBox.Margin = new Padding(4);
             OtherTextBox.Multiline = true;
             OtherTextBox.Name = "OtherTextBox";
-            OtherTextBox.Size = new Size(252, 166);
+            OtherTextBox.Size = new Size(252, 63);
             OtherTextBox.TabIndex = 1;
             // 
             // Box13TableLayoutPanel
             // 
             Box13TableLayoutPanel.ColumnCount = 4;
-            Box13TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.31222F));
-            Box13TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 26.69683F));
+            Box13TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.9230766F));
+            Box13TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.76923F));
             Box13TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 29.86425F));
             Box13TableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 31.41763F));
             Box13TableLayoutPanel.Controls.Add(Box13Label, 0, 0);
@@ -1187,7 +1185,7 @@
             // 
             StatutoryEmployeeLabel.AutoSize = true;
             StatutoryEmployeeLabel.Font = new Font("Microsoft Sans Serif", 6.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            StatutoryEmployeeLabel.Location = new Point(33, 2);
+            StatutoryEmployeeLabel.Location = new Point(35, 2);
             StatutoryEmployeeLabel.Margin = new Padding(4, 2, 4, 4);
             StatutoryEmployeeLabel.Name = "StatutoryEmployeeLabel";
             StatutoryEmployeeLabel.Size = new Size(45, 24);
@@ -1197,8 +1195,8 @@
             // StatutoryEmployeeCheckBox
             // 
             StatutoryEmployeeCheckBox.AutoSize = true;
-            StatutoryEmployeeCheckBox.Location = new Point(33, 34);
-            StatutoryEmployeeCheckBox.Margin = new Padding(4, 4, 4, 4);
+            StatutoryEmployeeCheckBox.Location = new Point(35, 34);
+            StatutoryEmployeeCheckBox.Margin = new Padding(4);
             StatutoryEmployeeCheckBox.Name = "StatutoryEmployeeCheckBox";
             StatutoryEmployeeCheckBox.Size = new Size(15, 14);
             StatutoryEmployeeCheckBox.TabIndex = 4;
@@ -1219,7 +1217,7 @@
             // 
             RetirementPlanCheckBox.AutoSize = true;
             RetirementPlanCheckBox.Location = new Point(102, 34);
-            RetirementPlanCheckBox.Margin = new Padding(4, 4, 4, 4);
+            RetirementPlanCheckBox.Margin = new Padding(4);
             RetirementPlanCheckBox.Name = "RetirementPlanCheckBox";
             RetirementPlanCheckBox.Size = new Size(15, 14);
             RetirementPlanCheckBox.TabIndex = 5;
@@ -1240,7 +1238,7 @@
             // 
             ThirdPartySickPayCheckBox.AutoSize = true;
             ThirdPartySickPayCheckBox.Location = new Point(180, 34);
-            ThirdPartySickPayCheckBox.Margin = new Padding(4, 4, 4, 4);
+            ThirdPartySickPayCheckBox.Margin = new Padding(4);
             ThirdPartySickPayCheckBox.Name = "ThirdPartySickPayCheckBox";
             ThirdPartySickPayCheckBox.Size = new Size(15, 14);
             ThirdPartySickPayCheckBox.TabIndex = 6;
@@ -1261,14 +1259,14 @@
             Box12dTableLayoutPanel.RowCount = 2;
             Box12dTableLayoutPanel.RowStyles.Add(new RowStyle());
             Box12dTableLayoutPanel.RowStyles.Add(new RowStyle());
-            Box12dTableLayoutPanel.Size = new Size(261, 136);
+            Box12dTableLayoutPanel.Size = new Size(261, 44);
             Box12dTableLayoutPanel.TabIndex = 28;
             // 
             // Box12dLabel
             // 
             Box12dLabel.AutoSize = true;
             Box12dLabel.Location = new Point(4, 4);
-            Box12dLabel.Margin = new Padding(4, 4, 4, 4);
+            Box12dLabel.Margin = new Padding(4);
             Box12dLabel.Name = "Box12dLabel";
             Box12dLabel.Size = new Size(26, 15);
             Box12dLabel.TabIndex = 0;
@@ -1279,7 +1277,7 @@
             Box12dCodeTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12dCodeTextBox.Dock = DockStyle.Fill;
             Box12dCodeTextBox.Location = new Point(4, 27);
-            Box12dCodeTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12dCodeTextBox.Margin = new Padding(4);
             Box12dCodeTextBox.Name = "Box12dCodeTextBox";
             Box12dCodeTextBox.Size = new Size(41, 23);
             Box12dCodeTextBox.TabIndex = 1;
@@ -1289,7 +1287,7 @@
             Box12dAmountTextBox.BorderStyle = BorderStyle.FixedSingle;
             Box12dAmountTextBox.Dock = DockStyle.Fill;
             Box12dAmountTextBox.Location = new Point(53, 27);
-            Box12dAmountTextBox.Margin = new Padding(4, 4, 4, 4);
+            Box12dAmountTextBox.Margin = new Padding(4);
             Box12dAmountTextBox.Name = "Box12dAmountTextBox";
             Box12dAmountTextBox.Size = new Size(204, 23);
             Box12dAmountTextBox.TabIndex = 2;
@@ -1303,7 +1301,7 @@
             W2BorderPanel.Controls.Add(BottomSectionMarginPanel);
             W2BorderPanel.Dock = DockStyle.Top;
             W2BorderPanel.Location = new Point(0, 0);
-            W2BorderPanel.Margin = new Padding(4, 4, 4, 4);
+            W2BorderPanel.Margin = new Padding(4);
             W2BorderPanel.Name = "W2BorderPanel";
             W2BorderPanel.Size = new Size(1161, 669);
             W2BorderPanel.TabIndex = 0;
@@ -1313,10 +1311,10 @@
             LeftSectionMarginPanel.Controls.Add(LeftSectionBorderPanel);
             LeftSectionMarginPanel.Dock = DockStyle.Left;
             LeftSectionMarginPanel.Location = new Point(0, 68);
-            LeftSectionMarginPanel.Margin = new Padding(4, 4, 4, 4);
+            LeftSectionMarginPanel.Margin = new Padding(4);
             LeftSectionMarginPanel.Name = "LeftSectionMarginPanel";
-            LeftSectionMarginPanel.Padding = new Padding(4, 4, 4, 4);
-            LeftSectionMarginPanel.Size = new Size(621, 501);
+            LeftSectionMarginPanel.Padding = new Padding(4);
+            LeftSectionMarginPanel.Size = new Size(621, 504);
             LeftSectionMarginPanel.TabIndex = 1;
             // 
             // LeftSectionBorderPanel
@@ -1325,10 +1323,10 @@
             LeftSectionBorderPanel.Controls.Add(LeftSectionTableLayoutPanel);
             LeftSectionBorderPanel.Dock = DockStyle.Fill;
             LeftSectionBorderPanel.Location = new Point(4, 4);
-            LeftSectionBorderPanel.Margin = new Padding(4, 4, 4, 4);
+            LeftSectionBorderPanel.Margin = new Padding(4);
             LeftSectionBorderPanel.Name = "LeftSectionBorderPanel";
-            LeftSectionBorderPanel.Padding = new Padding(4, 4, 4, 4);
-            LeftSectionBorderPanel.Size = new Size(613, 493);
+            LeftSectionBorderPanel.Padding = new Padding(4);
+            LeftSectionBorderPanel.Size = new Size(613, 496);
             LeftSectionBorderPanel.TabIndex = 0;
             // 
             // RightSectionMarginPanel
@@ -1336,10 +1334,10 @@
             RightSectionMarginPanel.Controls.Add(RightSectionBorderPanel);
             RightSectionMarginPanel.Dock = DockStyle.Right;
             RightSectionMarginPanel.Location = new Point(620, 68);
-            RightSectionMarginPanel.Margin = new Padding(4, 4, 4, 4);
+            RightSectionMarginPanel.Margin = new Padding(4);
             RightSectionMarginPanel.Name = "RightSectionMarginPanel";
-            RightSectionMarginPanel.Padding = new Padding(4, 4, 4, 4);
-            RightSectionMarginPanel.Size = new Size(539, 501);
+            RightSectionMarginPanel.Padding = new Padding(4);
+            RightSectionMarginPanel.Size = new Size(539, 504);
             RightSectionMarginPanel.TabIndex = 2;
             // 
             // RightSectionBorderPanel
@@ -1348,10 +1346,10 @@
             RightSectionBorderPanel.Controls.Add(RightSectionTableLayoutPanel);
             RightSectionBorderPanel.Dock = DockStyle.Fill;
             RightSectionBorderPanel.Location = new Point(4, 4);
-            RightSectionBorderPanel.Margin = new Padding(4, 4, 4, 4);
+            RightSectionBorderPanel.Margin = new Padding(4);
             RightSectionBorderPanel.Name = "RightSectionBorderPanel";
-            RightSectionBorderPanel.Padding = new Padding(4, 4, 4, 4);
-            RightSectionBorderPanel.Size = new Size(531, 493);
+            RightSectionBorderPanel.Padding = new Padding(4);
+            RightSectionBorderPanel.Size = new Size(531, 496);
             RightSectionBorderPanel.TabIndex = 0;
             // 
             // TopSectionMarginPanel
@@ -1359,9 +1357,9 @@
             TopSectionMarginPanel.Controls.Add(TopSectionBorderPanel);
             TopSectionMarginPanel.Dock = DockStyle.Top;
             TopSectionMarginPanel.Location = new Point(0, 0);
-            TopSectionMarginPanel.Margin = new Padding(4, 4, 4, 4);
+            TopSectionMarginPanel.Margin = new Padding(4);
             TopSectionMarginPanel.Name = "TopSectionMarginPanel";
-            TopSectionMarginPanel.Padding = new Padding(4, 4, 4, 4);
+            TopSectionMarginPanel.Padding = new Padding(4);
             TopSectionMarginPanel.Size = new Size(1159, 68);
             TopSectionMarginPanel.TabIndex = 0;
             // 
@@ -1371,9 +1369,9 @@
             TopSectionBorderPanel.Controls.Add(TopSectionTableLayoutPanel);
             TopSectionBorderPanel.Dock = DockStyle.Fill;
             TopSectionBorderPanel.Location = new Point(4, 4);
-            TopSectionBorderPanel.Margin = new Padding(4, 4, 4, 4);
+            TopSectionBorderPanel.Margin = new Padding(4);
             TopSectionBorderPanel.Name = "TopSectionBorderPanel";
-            TopSectionBorderPanel.Padding = new Padding(4, 4, 4, 4);
+            TopSectionBorderPanel.Padding = new Padding(4);
             TopSectionBorderPanel.Size = new Size(1151, 60);
             TopSectionBorderPanel.TabIndex = 0;
             // 
@@ -1381,11 +1379,11 @@
             // 
             BottomSectionMarginPanel.Controls.Add(BottomSectionBorderPanel);
             BottomSectionMarginPanel.Dock = DockStyle.Bottom;
-            BottomSectionMarginPanel.Location = new Point(0, 569);
-            BottomSectionMarginPanel.Margin = new Padding(4, 4, 4, 4);
+            BottomSectionMarginPanel.Location = new Point(0, 572);
+            BottomSectionMarginPanel.Margin = new Padding(4);
             BottomSectionMarginPanel.Name = "BottomSectionMarginPanel";
-            BottomSectionMarginPanel.Padding = new Padding(4, 4, 4, 4);
-            BottomSectionMarginPanel.Size = new Size(1159, 98);
+            BottomSectionMarginPanel.Padding = new Padding(4);
+            BottomSectionMarginPanel.Size = new Size(1159, 95);
             BottomSectionMarginPanel.TabIndex = 3;
             // 
             // BottomSectionBorderPanel
@@ -1394,10 +1392,10 @@
             BottomSectionBorderPanel.Controls.Add(BottomSectionTableLayoutPanel);
             BottomSectionBorderPanel.Dock = DockStyle.Fill;
             BottomSectionBorderPanel.Location = new Point(4, 4);
-            BottomSectionBorderPanel.Margin = new Padding(4, 4, 4, 4);
+            BottomSectionBorderPanel.Margin = new Padding(4);
             BottomSectionBorderPanel.Name = "BottomSectionBorderPanel";
-            BottomSectionBorderPanel.Padding = new Padding(4, 4, 4, 4);
-            BottomSectionBorderPanel.Size = new Size(1151, 90);
+            BottomSectionBorderPanel.Padding = new Padding(4);
+            BottomSectionBorderPanel.Size = new Size(1151, 87);
             BottomSectionBorderPanel.TabIndex = 0;
             // 
             // SaveLoadButtonsTableLayoutPanel
@@ -1407,9 +1405,9 @@
             SaveLoadButtonsTableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             SaveLoadButtonsTableLayoutPanel.Controls.Add(SaveButton, 0, 0);
             SaveLoadButtonsTableLayoutPanel.Controls.Add(LoadButton, 1, 0);
-            SaveLoadButtonsTableLayoutPanel.Dock = DockStyle.Top;
-            SaveLoadButtonsTableLayoutPanel.Location = new Point(0, 669);
-            SaveLoadButtonsTableLayoutPanel.Margin = new Padding(4, 4, 4, 4);
+            SaveLoadButtonsTableLayoutPanel.Dock = DockStyle.Bottom;
+            SaveLoadButtonsTableLayoutPanel.Location = new Point(0, 668);
+            SaveLoadButtonsTableLayoutPanel.Margin = new Padding(4);
             SaveLoadButtonsTableLayoutPanel.Name = "SaveLoadButtonsTableLayoutPanel";
             SaveLoadButtonsTableLayoutPanel.RowCount = 1;
             SaveLoadButtonsTableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
@@ -1421,7 +1419,7 @@
             // 
             SaveButton.Anchor = AnchorStyles.Right;
             SaveButton.Location = new Point(488, 5);
-            SaveButton.Margin = new Padding(4, 4, 4, 4);
+            SaveButton.Margin = new Padding(4);
             SaveButton.Name = "SaveButton";
             SaveButton.Size = new Size(88, 26);
             SaveButton.TabIndex = 0;
@@ -1433,7 +1431,7 @@
             // 
             LoadButton.Anchor = AnchorStyles.Left;
             LoadButton.Location = new Point(584, 5);
-            LoadButton.Margin = new Padding(4, 4, 4, 4);
+            LoadButton.Margin = new Padding(4);
             LoadButton.Name = "LoadButton";
             LoadButton.Size = new Size(88, 26);
             LoadButton.TabIndex = 1;
@@ -1448,9 +1446,9 @@
             BackColor = Color.FromArgb(224, 224, 224);
             Controls.Add(SaveLoadButtonsTableLayoutPanel);
             Controls.Add(W2BorderPanel);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "W2UserControl";
-            Size = new Size(1161, 706);
+            Size = new Size(1161, 704);
             BottomSectionTableLayoutPanel.ResumeLayout(false);
             BottomSectionTableLayoutPanel.PerformLayout();
             LeftSectionTableLayoutPanel.ResumeLayout(false);
