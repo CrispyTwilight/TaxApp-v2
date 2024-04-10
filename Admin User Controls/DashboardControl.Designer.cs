@@ -267,6 +267,7 @@
             UsersButton.Text = "&USERS";
             UsersButton.TextImageRelation = TextImageRelation.TextBeforeImage;
             UsersButton.UseVisualStyleBackColor = false;
+            UsersButton.Click += UsersButton_Click;
             // 
             // EmployeesButton
             // 
@@ -283,6 +284,7 @@
             EmployeesButton.Text = "&EMPLOYEES";
             EmployeesButton.TextImageRelation = TextImageRelation.TextBeforeImage;
             EmployeesButton.UseVisualStyleBackColor = false;
+            EmployeesButton.Click += EmployeesButton_Click;
             // 
             // InvoicesButton
             // 
@@ -299,6 +301,7 @@
             InvoicesButton.Text = "&INVOICES";
             InvoicesButton.TextImageRelation = TextImageRelation.TextBeforeImage;
             InvoicesButton.UseVisualStyleBackColor = false;
+            InvoicesButton.Click += InvoicesButton_Click;
             // 
             // ClientsButton
             // 
@@ -332,6 +335,7 @@
             AppointmentsButton.Text = "&APPOINTMENTS";
             AppointmentsButton.TextImageRelation = TextImageRelation.TextBeforeImage;
             AppointmentsButton.UseVisualStyleBackColor = false;
+            AppointmentsButton.Click += AppointmentsButton_Click;
             // 
             // LogOutButton
             // 
@@ -366,6 +370,7 @@
             HelpButton.Text = "&HELP";
             HelpButton.TextImageRelation = TextImageRelation.TextBeforeImage;
             HelpButton.UseVisualStyleBackColor = false;
+            HelpButton.Click += HelpButton_Click;
             // 
             // SidebarPanel
             // 
