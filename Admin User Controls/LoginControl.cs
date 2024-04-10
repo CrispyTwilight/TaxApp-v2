@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using TaxApp_v2.Models.DataLayer;
 
 namespace TaxApp_v2.Admin_User_Controls
 {
@@ -17,8 +18,11 @@ namespace TaxApp_v2.Admin_User_Controls
             Utils.SetEnterKeyBehavior(PasswordTextBox, LoginBtn_Click);
         }
 
+        TaxAppContext context = new TaxAppContext();
+        User user;
+
         private void LoginBtn_Click(object sender, EventArgs e)
-        {/*
+        {
             if (string.IsNullOrEmpty(UsernameTextBox.Text) || string.IsNullOrEmpty(PasswordTextBox.Text))
             {
                 Utils.ShowErrorMessage("Username or Password field is empty.", "Login Failed");
@@ -26,16 +30,17 @@ namespace TaxApp_v2.Admin_User_Controls
                 return;
             }
 
-            var parameters = new Dictionary<string, object> { { "@username", UsernameTextBox.Text } };
-            var result = DatabaseHelper.ExecuteSelectQuery("SELECT * FROM users WHERE username = @username", parameters);
+            user = context.Users.FirstOrDefault(u => u.Username == UsernameTextBox.Text);
 
-            if (result.Rows.Count > 0)
+            if (user != null)
             {
-                string storedPasswordHash = result.Rows[0]["password_hash"].ToString();
+                string storedPasswordHash = user.PasswordHash;
                 if (storedPasswordHash == Utils.ComputeHash(PasswordTextBox.Text))
                 {
-                    Utils.currentUserId = (int)result.Rows[0]["user_id"];
-                    ((TaxAppForm)this.Parent).SwitchToDashboard();
+                    Utils.currentUserId = user.UserId;
+                    Utils.currentUsername = user.Username;
+                    // Login successful, switch to dashboard
+                    ((TaxAppForm)Parent).SwitchTo("Dashboard");
                 }
                 else
                 {
@@ -47,12 +52,12 @@ namespace TaxApp_v2.Admin_User_Controls
             {
                 Utils.ShowErrorMessage("User does not exist. Please register.", "Login Failed");
                 Utils.ClearAndFocus(UsernameTextBox, PasswordTextBox);
-            }*/
+            }
         }
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            ((TaxAppForm)this.Parent).SwitchToRegistration();
+            ((TaxAppForm)Parent).SwitchTo("Registration");
         }
 
         private void ShowPasswordCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -60,6 +65,8 @@ namespace TaxApp_v2.Admin_User_Controls
             Utils.ShowPassword(PasswordTextBox, ShowPasswordCheckBox);
         }
 
+
+        // This method is used to set the username text box when it comes from the registration form
         public void SetUsername(string username)
         {
             UsernameTextBox.Text = username;

@@ -15,6 +15,7 @@ namespace TaxApp_v2
     {
         // Declare current user id variable here so that it can be accessed from any form or user control
         public static int currentUserId { get; set; }
+        public static string currentUsername { get; set; }
 
 
         // Hash the input string using SHA256. This is used to hash the password before storing it in the database

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tax_Application.Forms
+namespace TaxApp_v2.TaxForms
 {
     public partial class Form1098_E : UserControl
     {

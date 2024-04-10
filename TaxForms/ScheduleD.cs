@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tax_Application.Forms
+namespace TaxApp_v2.TaxForms
 {
     public partial class ScheduleD : UserControl
     {
@@ -30,7 +30,7 @@ namespace Tax_Application.Forms
             if (!parsed)
             {
                 //Handle parse failure
-                shortP = 0; 
+                shortP = 0;
             }
 
             //For short cost
@@ -38,7 +38,7 @@ namespace Tax_Application.Forms
             parsed = float.TryParse(shortCost.Text, out shortC);
             if (!parsed)
             {
-                shortC = 0; 
+                shortC = 0;
             }
 
             //Calculating short gain/loss
@@ -49,15 +49,15 @@ namespace Tax_Application.Forms
             parsed = float.TryParse(longProceeds.Text, out longP);
             if (!parsed)
             {
-                longP = 0; 
+                longP = 0;
             }
 
             //For long cost
             float longC;
-            parsed = float.TryParse(lonCost.Text, out longC); 
+            parsed = float.TryParse(lonCost.Text, out longC);
             if (!parsed)
             {
-                longC = 0; 
+                longC = 0;
             }
 
             //Calculating long gain/loss

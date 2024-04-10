@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaxAppForm));
-            this.SuspendLayout();
+            SuspendLayout();
             // 
             // TaxAppForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1599, 901);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "TaxAppForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tax App";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TaxAppForm_FormClosing);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1864, 1019);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            MaximumSize = new Size(1880, 1058);
+            Name = "TaxAppForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Tax App";
+            FormClosing += TaxAppForm_FormClosing;
+            ResumeLayout(false);
         }
 
         #endregion

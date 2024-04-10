@@ -5,11 +5,15 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using TaxApp_v2.Models.DataLayer;
 
 namespace TaxApp_v2.Admin_User_Controls
 {
     public partial class RegistrationControl : UserControl
     {
+        TaxAppContext context = new TaxAppContext();
+        User user;
+
         public RegistrationControl()
         {
             InitializeComponent();
@@ -21,41 +25,91 @@ namespace TaxApp_v2.Admin_User_Controls
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
-            /*if (string.IsNullOrEmpty(UsernameTextBox.Text) || string.IsNullOrEmpty(PasswordTextBox.Text) || string.IsNullOrEmpty(ReEnterPasswordTextBox.Text))
+            // Input validation
+            if (!ValidateInput())
             {
-                Utils.ShowErrorMessage("Username or Password field is empty.", "Registration Failed");
-                Utils.ClearAndFocus(UsernameTextBox, PasswordTextBox, ReEnterPasswordTextBox);
                 return;
             }
 
-            var checkParameters = new Dictionary<string, object> { { "@username", UsernameTextBox.Text } };
-            var result = DatabaseHelper.ExecuteSelectQuery("SELECT * FROM users WHERE username = @username", checkParameters);
+            // Create new user
+            user = new User
+            {
+                Username = UsernameTextBox.Text,
+                PasswordHash = Utils.ComputeHash(PasswordTextBox.Text),
+                Role = RoleComboBox.Text
+            };
 
-            if (result.Rows.Count > 0)
+            // Add user to database
+            try
+            {
+                context.Users.Add(user);
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                Utils.ShowErrorMessage("An error occurred while registering. Please try again later.", "Registration Failed");
+                return;
+            }
+
+            MessageBox.Show("Registration Successful.", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            SwitchToLogin();
+        }
+
+        private bool ValidateInput()
+        {
+            if (string.IsNullOrEmpty(UsernameTextBox.Text))
+            {
+                Utils.ShowErrorMessage("Username field is empty.", "Registration Failed");
+                Utils.ClearAndFocus(UsernameTextBox);
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(PasswordTextBox.Text))
+            {
+                Utils.ShowErrorMessage("Password field is empty.", "Registration Failed");
+                Utils.ClearAndFocus(PasswordTextBox);
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(ReEnterPasswordTextBox.Text))
+            {
+                Utils.ShowErrorMessage("Re-enter Password field is empty.", "Registration Failed");
+                Utils.ClearAndFocus(ReEnterPasswordTextBox);
+                return false;
+            }
+
+            if (RoleComboBox.SelectedIndex == -1)
+            {
+                Utils.ShowErrorMessage("Role is not selected.", "Registration Failed");
+                RoleComboBox.SelectedIndex = 0;
+                return false;
+            }
+
+            if (UsernameTextBox.Text.Length > 50)
+            {
+                Utils.ShowErrorMessage("Username is too long. It should be less than 50 characters.", "Registration Failed");
+                Utils.ClearAndFocus(UsernameTextBox);
+                return false;
+            }
+
+            if (PasswordTextBox.Text != ReEnterPasswordTextBox.Text)
+            {
+                Utils.ShowErrorMessage("Passwords do not match.", "Registration Failed");
+                Utils.ClearAndFocus(PasswordTextBox, ReEnterPasswordTextBox);
+                return false;
+            }
+
+            // Check if username already exists
+            user = context.Users.FirstOrDefault(u => u.Username == UsernameTextBox.Text);
+
+            if (user != null)
             {
                 Utils.ShowErrorMessage("Username already exists.", "Registration Failed");
                 Utils.ClearAndFocus(UsernameTextBox);
-                return;
+                return false;
             }
 
-            if (RoleComboBox.SelectedIndex == -1 || UsernameTextBox.Text.Length > 50 || PasswordTextBox.Text != ReEnterPasswordTextBox.Text)
-            {
-                Utils.ShowErrorMessage("Please correct your input.", "Registration Failed");
-                Utils.ClearAndFocus(UsernameTextBox, PasswordTextBox, ReEnterPasswordTextBox);
-                return;
-            }
-
-            var insertParameters = new Dictionary<string, object>
-            {
-                { "@username", UsernameTextBox.Text },
-                { "@password", Utils.ComputeHash(PasswordTextBox.Text) },
-                { "@role", RoleComboBox.Text }
-            };
-
-            DatabaseHelper.ExecuteNonSelectQuery("INSERT INTO users (username, password_hash, role) VALUES (@username, @password, @role)", insertParameters);
-
-            MessageBox.Show("Registration Successful.", "Registration", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            SwitchToLogin();*/
+            return true;
         }
 
         private void BackToLoginButton_Click(object sender, EventArgs e)
@@ -65,8 +119,8 @@ namespace TaxApp_v2.Admin_User_Controls
 
         private void SwitchToLogin()
         {
-            var taxAppForm = (TaxAppForm)this.Parent;
-            taxAppForm.SwitchToLogin();
+            var taxAppForm = (TaxAppForm)Parent;
+            ((TaxAppForm)Parent).SwitchTo("Login");
             ((LoginControl)taxAppForm.CurrentControl).SetUsername(UsernameTextBox.Text);
         }
 

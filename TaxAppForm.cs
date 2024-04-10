@@ -3,6 +3,7 @@
 // Desc: The main form for the tax application. This form is the entry point for the application and contains the main logic for switching between different user controls.
 
 using System.Windows.Forms;
+using TaxApp_v2.Admin_User_Controls;
 
 namespace TaxApp_v2
 {
@@ -10,64 +11,56 @@ namespace TaxApp_v2
     {
         // Keep track of the current UserControl being displayed on the form
         private UserControl currentControl;
+        private Dictionary<string, UserControl> controls = new Dictionary<string, UserControl>();
 
         public TaxAppForm()
         {
             InitializeComponent();
 
+            // Create the UserControls and add them to the dictionary
+            controls.Add("Login", new LoginControl());
+            controls.Add("Registration", new RegistrationControl());
+            controls.Add("Dashboard", new DashboardControl());
+
             // Show the LoginControl when the form is loaded
-            SwitchToLogin();
+            SwitchTo("Login");
+        }
+
+        public void SwitchTo(string controlName)
+        {
+            // Remove the current UserControl
+            if (currentControl != null)
+                this.Controls.Remove(currentControl);
+
+            // Get the new UserControl from the dictionary
+            currentControl = controls[controlName];
+
+            // Add the new UserControl to the form
+            this.Controls.Add(currentControl);
+            if (controlName == "Dashboard")
+            {
+                currentControl.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                Utils.CenterControl(currentControl);
+
+                // focus username
+                if (controlName == "Login")
+                {
+                    ((LoginControl)currentControl).FocusUsername();
+                }
+                else if (controlName == "Registration")
+                {
+                    ((RegistrationControl)currentControl).FocusUsername();
+                }
+            }
         }
 
         // Getter for current UserControl
         public UserControl CurrentControl
         {
             get { return currentControl; }
-        }
-
-        public void SwitchToRegistration()
-        {
-            // Remove the current UserControl
-            if (currentControl != null)
-                this.Controls.Remove(currentControl);
-
-            // Show the RegistrationControl
-            currentControl = new Admin_User_Controls.RegistrationControl();
-            this.Controls.Add(currentControl);
-
-            // Center the UserControl within the Form
-            Utils.CenterControl(currentControl);
-
-            // Set the focus to the UsernameTextBox
-            ((Admin_User_Controls.RegistrationControl)currentControl).FocusUsername();
-        }
-
-        public void SwitchToLogin()
-        {
-            // Remove the current UserControl
-            if (currentControl != null)
-                this.Controls.Remove(currentControl);
-
-            // Show the LoginControl
-            currentControl = new Admin_User_Controls.LoginControl();
-            this.Controls.Add(currentControl);
-
-            // Center the UserControl within the Form
-            Utils.CenterControl(currentControl);
-
-            // Set the focus to the UsernameTextBox
-            ((Admin_User_Controls.LoginControl)currentControl).FocusUsername();
-        }
-
-        public void SwitchToDashboard()
-        {
-            // Remove the current UserControl
-            if (currentControl != null)
-                this.Controls.Remove(currentControl);
-
-            // Show the DashboardControl
-            currentControl = new Admin_User_Controls.DashboardControl();
-            this.Controls.Add(currentControl);
         }
 
         private void TaxAppForm_FormClosing(object sender, FormClosingEventArgs e)

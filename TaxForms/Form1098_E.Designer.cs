@@ -1,4 +1,4 @@
-﻿namespace Tax_Application.Forms
+﻿namespace TaxApp_v2.TaxForms
 {
     partial class Form1098_E
     {
