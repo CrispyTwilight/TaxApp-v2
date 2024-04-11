@@ -19,11 +19,11 @@ public partial class Appointment
     [Column("employee_id")]
     public int? EmployeeId { get; set; }
 
-    [Column("date")]
-    public DateOnly? Date { get; set; }
+    [Column("date", TypeName = "date")]
+    public DateTime? Date { get; set; }
 
     [Column("time")]
-    public TimeOnly? Time { get; set; }
+    public TimeSpan? Time { get; set; }
 
     [Column("purpose")]
     [StringLength(255)]

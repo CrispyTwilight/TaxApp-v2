@@ -30,11 +30,11 @@ public partial class ScheduleDMetadatum
     public virtual Client? Client { get; set; }
 
     [InverseProperty("ScheduleDMetadata")]
-    public virtual ICollection<ScheduleDLongTerm> ScheduleDLongTerms { get; set; } = new List<ScheduleDLongTerm>();
+    public virtual ICollection<ScheduleDLongTerm> ScheduleDLongTerms { get; } = new List<ScheduleDLongTerm>();
 
     [InverseProperty("ScheduleDMetadata")]
-    public virtual ICollection<ScheduleDShortTerm> ScheduleDShortTerms { get; set; } = new List<ScheduleDShortTerm>();
+    public virtual ICollection<ScheduleDShortTerm> ScheduleDShortTerms { get; } = new List<ScheduleDShortTerm>();
 
     [InverseProperty("ScheduleDMetadata")]
-    public virtual ICollection<ScheduleDSummary> ScheduleDSummaries { get; set; } = new List<ScheduleDSummary>();
+    public virtual ICollection<ScheduleDSummary> ScheduleDSummaries { get; } = new List<ScheduleDSummary>();
 }

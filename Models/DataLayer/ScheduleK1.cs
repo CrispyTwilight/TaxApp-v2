@@ -25,11 +25,11 @@ public partial class ScheduleK1
     [Column("amended_k1")]
     public bool? AmendedK1 { get; set; }
 
-    [Column("beginning_date")]
-    public DateOnly? BeginningDate { get; set; }
+    [Column("beginning_date", TypeName = "date")]
+    public DateTime? BeginningDate { get; set; }
 
-    [Column("ending_date")]
-    public DateOnly? EndingDate { get; set; }
+    [Column("ending_date", TypeName = "date")]
+    public DateTime? EndingDate { get; set; }
 
     [Column("estate_or_trust_ein")]
     [StringLength(10)]
@@ -74,8 +74,8 @@ public partial class ScheduleK1
     [Column("d_1041t_filed")]
     public bool? D1041tFiled { get; set; }
 
-    [Column("d_date_filed")]
-    public DateOnly? DDateFiled { get; set; }
+    [Column("d_date_filed", TypeName = "date")]
+    public DateTime? DDateFiled { get; set; }
 
     [Column("e_final_form1041")]
     public bool? EFinalForm1041 { get; set; }

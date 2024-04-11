@@ -19,11 +19,11 @@ public partial class Invoice
     [Column("employee_id")]
     public int? EmployeeId { get; set; }
 
-    [Column("invoice_date")]
-    public DateOnly? InvoiceDate { get; set; }
+    [Column("invoice_date", TypeName = "date")]
+    public DateTime? InvoiceDate { get; set; }
 
-    [Column("due_date")]
-    public DateOnly? DueDate { get; set; }
+    [Column("due_date", TypeName = "date")]
+    public DateTime? DueDate { get; set; }
 
     [Column("amount", TypeName = "decimal(15, 2)")]
     public decimal? Amount { get; set; }
@@ -31,8 +31,8 @@ public partial class Invoice
     [Column("paid")]
     public bool? Paid { get; set; }
 
-    [Column("payment_date")]
-    public DateOnly? PaymentDate { get; set; }
+    [Column("payment_date", TypeName = "date")]
+    public DateTime? PaymentDate { get; set; }
 
     [ForeignKey("ClientId")]
     [InverseProperty("Invoices")]

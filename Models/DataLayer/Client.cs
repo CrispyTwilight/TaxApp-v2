@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace TaxApp_v2.Models.DataLayer;
 
 [Table("clients")]
-[Index("Ssn", Name = "UQ__clients__DDDF0AE64AA0EFC9", IsUnique = true)]
+[Index("Ssn", Name = "UQ__clients__DDDF0AE6F0B08934", IsUnique = true)]
 public partial class Client
 {
     [Key]
@@ -39,8 +39,8 @@ public partial class Client
     [Unicode(false)]
     public string Ssn { get; set; } = null!;
 
-    [Column("birth_date")]
-    public DateOnly? BirthDate { get; set; }
+    [Column("birth_date", TypeName = "date")]
+    public DateTime? BirthDate { get; set; }
 
     [Column("home_phone")]
     [StringLength(15)]
@@ -107,27 +107,27 @@ public partial class Client
     public int? UserId { get; set; }
 
     [InverseProperty("Client")]
-    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    public virtual ICollection<Appointment> Appointments { get; } = new List<Appointment>();
 
     [InverseProperty("Client")]
-    public virtual ICollection<Form1040> Form1040s { get; set; } = new List<Form1040>();
+    public virtual ICollection<Form1040> Form1040s { get; } = new List<Form1040>();
 
     [InverseProperty("Client")]
-    public virtual ICollection<Form1098e> Form1098es { get; set; } = new List<Form1098e>();
+    public virtual ICollection<Form1098e> Form1098es { get; } = new List<Form1098e>();
 
     [InverseProperty("Client")]
-    public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
+    public virtual ICollection<Invoice> Invoices { get; } = new List<Invoice>();
 
     [InverseProperty("Client")]
-    public virtual ICollection<ScheduleDMetadatum> ScheduleDMetadata { get; set; } = new List<ScheduleDMetadatum>();
+    public virtual ICollection<ScheduleDMetadatum> ScheduleDMetadata { get; } = new List<ScheduleDMetadatum>();
 
     [InverseProperty("Client")]
-    public virtual ICollection<ScheduleK1> ScheduleK1s { get; set; } = new List<ScheduleK1>();
+    public virtual ICollection<ScheduleK1> ScheduleK1s { get; } = new List<ScheduleK1>();
 
     [ForeignKey("UserId")]
     [InverseProperty("Clients")]
     public virtual User? User { get; set; }
 
     [InverseProperty("Client")]
-    public virtual ICollection<W2> W2s { get; set; } = new List<W2>();
+    public virtual ICollection<W2> W2s { get; } = new List<W2>();
 }

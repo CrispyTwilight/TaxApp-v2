@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace TaxApp_v2.Models.DataLayer;
 
 [Table("employees")]
-[Index("UserId", Name = "UQ__employee__B9BE370E68C1FB5A", IsUnique = true)]
+[Index("UserId", Name = "UQ__employee__B9BE370EF44BB29E", IsUnique = true)]
 public partial class Employee
 {
     [Key]
@@ -73,10 +73,10 @@ public partial class Employee
     public string? Email { get; set; }
 
     [InverseProperty("Employee")]
-    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    public virtual ICollection<Appointment> Appointments { get; } = new List<Appointment>();
 
     [InverseProperty("Employee")]
-    public virtual ICollection<Invoice> Invoices { get; set; } = new List<Invoice>();
+    public virtual ICollection<Invoice> Invoices { get; } = new List<Invoice>();
 
     [ForeignKey("UserId")]
     [InverseProperty("Employee")]

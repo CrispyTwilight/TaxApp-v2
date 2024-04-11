@@ -29,7 +29,7 @@ public partial class User
     public string Role { get; set; } = null!;
 
     [InverseProperty("User")]
-    public virtual ICollection<Client> Clients { get; set; } = new List<Client>();
+    public virtual ICollection<Client> Clients { get; } = new List<Client>();
 
     [InverseProperty("User")]
     public virtual Employee? Employee { get; set; }

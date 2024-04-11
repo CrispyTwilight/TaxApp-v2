@@ -23,7 +23,9 @@ namespace TaxApp_v2
 
         public void CreateTables()
         {
-            using (SqlConnection connection = new SqlConnection(connectionString))
+
+            string hardCodedConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\TaxApp-v2\\Database\\tax_app_db_v2.mdf;Integrated Security=True;Connect Timeout=30";
+            using (SqlConnection connection = new SqlConnection(hardCodedConnectionString))
             {
                 connection.Open();
 

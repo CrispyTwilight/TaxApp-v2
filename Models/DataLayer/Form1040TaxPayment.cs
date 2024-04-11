@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace TaxApp_v2.Models.DataLayer;
 
 [Table("form1040_tax_payments")]
-[Index("Form1040Id", Name = "UQ__form1040__402C2DEDFAEAABE7", IsUnique = true)]
+[Index("Form1040Id", Name = "UQ__form1040__402C2DED4A4D8A59", IsUnique = true)]
 public partial class Form1040TaxPayment
 {
     [Key]
@@ -133,8 +133,8 @@ public partial class Form1040TaxPayment
     [Column("signature")]
     public byte[]? Signature { get; set; }
 
-    [Column("date")]
-    public DateOnly? Date { get; set; }
+    [Column("date", TypeName = "date")]
+    public DateTime? Date { get; set; }
 
     [Column("occupation")]
     [StringLength(50)]
@@ -149,8 +149,8 @@ public partial class Form1040TaxPayment
     [Column("spouse_signature")]
     public byte[]? SpouseSignature { get; set; }
 
-    [Column("spouse_date")]
-    public DateOnly? SpouseDate { get; set; }
+    [Column("spouse_date", TypeName = "date")]
+    public DateTime? SpouseDate { get; set; }
 
     [Column("spouse_occupation")]
     [StringLength(50)]

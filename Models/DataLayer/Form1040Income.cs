@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace TaxApp_v2.Models.DataLayer;
 
 [Table("form1040_income")]
-[Index("Form1040Id", Name = "UQ__form1040__402C2DED01866F8E", IsUnique = true)]
+[Index("Form1040Id", Name = "UQ__form1040__402C2DEDF852D586", IsUnique = true)]
 public partial class Form1040Income
 {
     [Key]

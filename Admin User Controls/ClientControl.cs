@@ -88,7 +88,7 @@ namespace TaxApp_v2.Admin_User_Controls
                 last_nameTextBox.Text = client.LastName;
                 suffixTextBox.Text = client.Suffix;
                 ssnTextBox.Text = client.Ssn;
-                birth_dateDateTimePicker.Value = client.BirthDate.HasValue ? client.BirthDate.Value.ToDateTime(TimeOnly.MinValue) : DateTime.Now;
+                // fix for .net 7 birth_dateDateTimePicker.Value = client.BirthDate.HasValue ? client.BirthDate.Value.ToDateTime(TimeOnly.MinValue) : DateTime.Now;
                 home_phoneTextBox.Text = client.HomePhone;
                 mobile_phoneTextBox.Text = client.MobilePhone;
                 emailTextBox.Text = client.Email;
