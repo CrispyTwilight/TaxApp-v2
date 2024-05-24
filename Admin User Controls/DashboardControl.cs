@@ -2,12 +2,6 @@
 // Date: 04/03/2024
 // Desc: The dashboard control for the tax application. This control displays the main dashboard for the application and allows users to navigate to different tax forms.
 
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Windows.Forms;
-using TaxApp_v2.Models.DataLayer;
-
 namespace TaxApp_v2.Admin_User_Controls
 {
     public partial class DashboardControl : UserControl
